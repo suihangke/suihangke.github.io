@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# About Me
-
 I am a first-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC). My research focuses on trustworthy artificial intelligence (AI) with a particular interest in applications for medicine and healthcare. I am passionate about exploring how AI can enhance decision-making in critical, real-world environments.
 
 ## Education
@@ -17,7 +15,7 @@ I am a first-year PhD student in Electrical and Computer Engineering at the Univ
 *University of Illinois Urbana-Champaign*  
 2024–Present
 
-**Bachelor of Science in Mathematics and Decision Analytics**  
+**Bachelor of Science in Mathematics**  
 *University of Hong Kong*  
 2020–2024
 
