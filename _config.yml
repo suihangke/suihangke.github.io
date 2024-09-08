@@ -22,7 +22,7 @@ repository               : "suihangke.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Hangke Sui"
+#  name             : "Hangke Sui"
   bio              : "Trustworthy AI, AI for medicine/healthcare"
   location         : "US"
   employer         : "UIUC"
@@ -56,7 +56,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : www.linkedin.com/in/hangke-sui
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
