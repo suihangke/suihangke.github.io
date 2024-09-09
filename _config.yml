@@ -10,8 +10,8 @@
 locale                   : "en-US"
 title                    : "Hangke Sui"
 title_separator          : "-"
-name                     : &name "Hangke"
-description              : &description "personal description"
+name                     : &name "Hangke Sui"
+description              : &description "personal academic website for Hangke Sui, PhD at UIUC ECE"
 url                      : https://suihangke.github.io/
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "suihangke.github.io"
