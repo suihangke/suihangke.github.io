@@ -7,7 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC). My research focuses on trustworthy artificial intelligence (AI) with a particular interest in applications for medicine and healthcare. I am passionate about exploring how AI can enhance decision-making in critical, real-world environments.
+I am a first-year PhD student in [Electrical and Computer Engineering](https://ece.illinois.edu/) (ECE) at the [University of Illinois Urbana-Champaign](https://illinois.edu/) (UIUC). I'm fortunate to be advised by Prof. [Minh Do](https://ece.illinois.edu/about/directory/faculty/minhdo). Before that, I gained a Bachelor of Science in Mathematics with double major in Decision Analytics from the University of Hong Kong. I'm really grateful to Prof. Xiaoming Yuan and Prof Lequan YU for introducing me to research. 
+
+## Research Interest
+My research focuses on trustworthy artificial intelligence (AI) with a particular interest in applications for medicine and healthcare. I am passionate about exploring how AI can enhance decision-making in critical, real-world environments.
 
 ## Education
 
