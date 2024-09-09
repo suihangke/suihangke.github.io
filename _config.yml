@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Hangke Sui"
-title_separator          : "-"
+title_separator          : " | "
 name                     : &name "Hangke Sui"
 description              : &description "Personal academic website of Hangke Sui, ECE PhD student at UIUC, focusing on AI, machine learning, and healthcare."
 url                      : https://suihangke.github.io/
@@ -25,7 +25,7 @@ author:
   name             : "Hangke Sui"
   bio              : "隋杭珂"
   location         : "Illinois, US"
-  employer         : #"UIUC"
+  employer         : #
   uri              : # URL
   email            : "hangkes2@illinois.edu" 
 
