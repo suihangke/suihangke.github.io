@@ -26,5 +26,4 @@ I am passionate about bridging elegant theoretical work with practical applicati
 *University of Hong Kong*  
 2020–2024
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI"></script>
 
