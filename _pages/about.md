@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year PhD student in [Electrical and Computer Engineering](https://ece.illinois.edu/) (ECE) at the [University of Illinois Urbana-Champaign](https://illinois.edu/) (UIUC), advised by Prof. [Minh Do](https://ece.illinois.edu/about/directory/faculty/minhdo). Prior to joining UIUC, I earned my Bachelor of Science in Mathematics with a double major in Decision Analytics from the University of Hong Kong. I am deeply grateful to Prof. [Xiaoming Yuan](https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en) and Prof. [Lequan YU](https://yulequan.github.io/) for introducing me to research and providing guidance during my undergraduate studies. Additionally, I had the privilege of being advised by Prof. [Justin Wan](https://cs.uwaterloo.ca/~jwlwan/) at the David R. Cheriton School of Computer Science, University of Waterloo.
+I am a first-year PhD student in [Electrical and Computer Engineering](https://ece.illinois.edu/) (ECE) at the [University of Illinois Urbana-Champaign](https://illinois.edu/) (UIUC), advised by Prof. [Minh Do](https://ece.illinois.edu/about/directory/faculty/minhdo). Prior to joining UIUC, I earned my Bachelor of Science in Mathematics with a double major in Decision Analytics from the University of Hong Kong. 
 
-Throughout my academic journey, I have been fortunate to receive mentorship and support from professors, mentors, and friends across the fields of mathematics, statistics, and computer science, all of whom have played a crucial role in shaping my pursuit of academic truth.
+I am deeply grateful to Prof. [Xiaoming Yuan](https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en) and Prof. [Lequan YU](https://yulequan.github.io/) for introducing me to research and providing guidance during my undergraduate studies. Additionally, I had the privilege of being advised by Prof. [Justin Wan](https://cs.uwaterloo.ca/~jwlwan/) at the David R. Cheriton School of Computer Science, University of Waterloo. I am deeply grateful to the many remarkable professors and mentors I've met along the way, who have profoundly shaped my understanding of mathematics, statistics, and computer science.
 
 ## Research Interests
 
