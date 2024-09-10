@@ -1,11 +1,13 @@
 ---
 permalink: /
-title: "About Me"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+## About Me
 
 I am a first-year PhD student in [Electrical and Computer Engineering](https://ece.illinois.edu/) (ECE) at the [University of Illinois Urbana-Champaign](https://illinois.edu/) (UIUC), advised by Prof. [Minh Do](https://ece.illinois.edu/about/directory/faculty/minhdo). Prior to joining UIUC, I earned my Bachelor of Science in Mathematics with a double major in Decision Analytics from the University of Hong Kong. 
 
