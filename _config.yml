@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Hangke Sui"
-  bio              : "隋杭珂"
+  bio              : # "隋杭珂"
   location         : "Illinois, US"
   employer         : #
   uri              : # URL
