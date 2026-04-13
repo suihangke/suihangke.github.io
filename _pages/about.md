@@ -9,7 +9,7 @@ redirect_from:
 
 <h2 id="about">About Me</h2>
 
-I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo). I am also fortunate to work closely with Professor [Ge Liu](https://www.mit.edu/~geliu/). Before joining UIUC, I received my B.Sc. in Mathematics with a double major in Decision Analytics from the University of Hong Kong.
+I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo). I am also fortunate to work closely with Professor [Ge Liu](https://www.mit.edu/~geliu/). Before joining UIUC, I received my B.Sc. in Mathematics from the University of Hong Kong.
 
 <h2 id="research-interests">Research Interests</h2>
 
@@ -44,9 +44,6 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
   </div>
 </div>
 
-<!-- - Introduced a **unified theoretical framework** for contrastive multimodal alignment, covering **linear vs. nonlinear** and **one-to-one vs. many-to-many** correspondence settings.
-- Achieved up to **461x speedup** in multimodal alignment training while matching or exceeding performance on synthetic, unimodal, and multimodal benchmarks.
-- Establishes a principled foundation for **efficient multimodal foundation models** and **theoretically grounded representation learning**. -->
 
 <h2 id="projects">Selected Projects</h2>
 
