@@ -39,3 +39,65 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Homepage clean light-blue theme */
+body.home-clean-blue {
+  background: linear-gradient(180deg, #f7fbff 0%, #f2f8ff 100%);
+}
+
+body.home-clean-blue .masthead {
+  background: #f7fbff;
+  border-bottom: 1px solid #dcecff;
+}
+
+body.home-clean-blue .page {
+  background: #ffffff;
+  border: 1px solid #d7e9fb;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.08);
+  padding: 0.9em 1.1em;
+}
+
+body.home-clean-blue .page__content h2,
+body.home-clean-blue .page__content h3 {
+  color: #1f4f82;
+}
+
+body.home-clean-blue .page__content p,
+body.home-clean-blue .page__content li,
+body.home-clean-blue .page__content em {
+  color: #24496b;
+}
+
+body.home-clean-blue .page__content a {
+  color: #1d70b8;
+  text-decoration-color: #9bc7ef;
+  text-underline-offset: 2px;
+}
+
+body.home-clean-blue .page__content a:hover {
+  color: #155a97;
+}
+
+/* Render inline code as clean rounded tags on homepage */
+body.home-clean-blue .page__content code {
+  background: #e8f3ff;
+  border: 1px solid #b6d9fb;
+  border-radius: 999px;
+  color: #1c5f99;
+  font-size: 0.85em;
+  padding: 0.15em 0.65em;
+}
+
+/* Make selected project block look like a light card */
+body.home-clean-blue .page__content blockquote {
+  background: #f4f9ff;
+  border-left: 4px solid #78b4ee;
+  border-radius: 10px;
+  margin: 1em 0 1.3em 0;
+  padding: 0.85em 1em;
+}
+
+body.home-clean-blue .page__content hr {
+  border-color: #d6e8fa;
+}
