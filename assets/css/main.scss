@@ -51,6 +51,12 @@ body.home-clean-blue .masthead {
   box-shadow: none;
 }
 
+@media (min-width: 1024px) {
+  body.home-clean-blue .masthead {
+    background: #f7fbff;
+  }
+}
+
 body.home-clean-blue .masthead__inner-wrap,
 body.home-clean-blue .masthead__menu,
 body.home-clean-blue .greedy-nav,
