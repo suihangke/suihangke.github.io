@@ -55,8 +55,7 @@ I aim to develop **unified learning paradigms** that bridge representation and g
     <div class="showcase-tags">
       <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
     </div>
-    <div class="showcase-venue">ARPA-H Funded Project</div>
-    <div class="showcase-submeta">2024-present</div>
+    <div class="showcase-venue">ARPA-H Funded Project, 2024-present</div>
     <div class="showcase-authors">
       <em>
         Collaborated with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
