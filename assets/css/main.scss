@@ -338,3 +338,14 @@ body.home-clean-blue .ack-box {
   width: auto;
   max-width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .author__urls-wrapper .author__urls {
+    display: none !important;
+  }
+
+  .author__urls-wrapper button.open + .author__urls {
+    display: block !important;
+    z-index: 20;
+  }
+}
