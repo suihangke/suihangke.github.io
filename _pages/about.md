@@ -13,8 +13,6 @@ I am a second-year PhD student in Electrical and Computer Engineering at the Uni
 
 <h2 id="research-interests">Research Interests</h2>
 
-<!-- My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>. I am interested in developing theoretically grounded and scalable learning frameworks that unify representation and generation across modalities. More broadly, I view multimodal learning and generative modeling not as separate problems, but as two complementary perspectives on building general-purpose intelligent systems. -->
-
 <p>
 My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>.
 </p>

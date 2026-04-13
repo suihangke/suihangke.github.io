@@ -71,9 +71,17 @@ body.home-clean-blue .page {
   padding: 0.9em 1.1em;
 }
 
+body.home-clean-blue #main {
+  margin-top: 0.9em;
+}
+
 body.home-clean-blue .page__content h2,
 body.home-clean-blue .page__content h3 {
   color: #1f4f82;
+}
+
+body.home-clean-blue .page__content > h2:first-child {
+  margin-top: 0.35em;
 }
 
 body.home-clean-blue .page__content p,
