@@ -101,3 +101,111 @@ body.home-clean-blue .page__content blockquote {
 body.home-clean-blue .page__content hr {
   border-color: #d6e8fa;
 }
+
+/* Fancy publication/project rows for homepage */
+body.home-clean-blue .showcase-item {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+  margin: 1.1rem 0 1.6rem;
+}
+
+body.home-clean-blue .showcase-badge {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(38, 106, 176, 0.2);
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  min-width: 118px;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+}
+
+body.home-clean-blue .badge-publication {
+  background: linear-gradient(90deg, #6da7e8 0%, #5c88e8 100%);
+}
+
+body.home-clean-blue .badge-project {
+  background: linear-gradient(90deg, #4cb3d4 0%, #3f8cc6 100%);
+}
+
+body.home-clean-blue .showcase-content {
+  flex: 1;
+}
+
+body.home-clean-blue .showcase-title {
+  color: #173f67;
+  font-size: 1.34rem;
+  font-weight: 700;
+  line-height: 1.32;
+  margin-bottom: 0.25rem;
+}
+
+body.home-clean-blue .showcase-tags {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.2rem 0 0.42rem;
+}
+
+body.home-clean-blue .showcase-meta {
+  background: #f0f7ff;
+  border: 1px solid #bfdcff;
+  border-radius: 999px;
+  color: #1f5f96;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.14rem 0.62rem;
+}
+
+body.home-clean-blue .showcase-authors {
+  color: #203f61;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+}
+
+body.home-clean-blue .showcase-venue {
+  color: #2a567e;
+  font-size: 1.03rem;
+  font-style: italic;
+  margin-bottom: 0.58rem;
+}
+
+body.home-clean-blue .showcase-links {
+  display: flex;
+  gap: 0.55rem;
+}
+
+body.home-clean-blue .showcase-btn {
+  background: #ffffff;
+  border: 1px solid #8dbbe7;
+  border-radius: 8px;
+  color: #1f5f96;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.25rem 0.8rem;
+  text-decoration: none;
+}
+
+body.home-clean-blue .showcase-btn:hover {
+  background: #eaf4ff;
+  border-color: #5f9ad7;
+  color: #174e83;
+}
+
+@media (max-width: 740px) {
+  body.home-clean-blue .showcase-item {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  body.home-clean-blue .showcase-badge {
+    min-width: 0;
+    width: fit-content;
+  }
+}
