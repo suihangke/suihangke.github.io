@@ -9,11 +9,7 @@ redirect_from:
 
 <h2 id="about">About Me</h2>
 
-I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo). I am also fortunate to work closely with Professor [Ge Liu](https://www.mit.edu/~geliu/).
-
-My research lies at the intersection of **multimodal representation learning, generative modeling, and AI for healthcare/biomedicine**. I am particularly interested in developing theoretically grounded learning frameworks that unify representation and generation across modalities, with applications to healthcare and biomedicine.
-
-Before joining UIUC, I received my B.Sc. in Mathematics with a double major in Decision Analytics from the University of Hong Kong.
+I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo). I am also fortunate to work closely with Professor [Ge Liu](https://www.mit.edu/~geliu/). Before joining UIUC, I received my B.Sc. in Mathematics with a double major in Decision Analytics from the University of Hong Kong.
 
 <h2 id="research-interests">Research Interests</h2>
 
@@ -23,7 +19,7 @@ Before joining UIUC, I received my B.Sc. in Mathematics with a double major in D
   <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
 </div>
 
-I aim to develop **unified learning paradigms** that bridge representation and generation across modalities.
+My research lies at the intersection of multimodal representation learning, generative modeling, and AI for healthcare/biomedicine. I am interested in developing theoretically grounded and scalable learning frameworks that unify representation and generation across modalities. More broadly, I view multimodal learning and generative modeling not as separate problems, but as two complementary perspectives on building general-purpose intelligent systems.
 
 <h2 id="publications">Publications</h2>
 

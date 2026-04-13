@@ -339,6 +339,14 @@ body.home-clean-blue .ack-box {
   max-width: 100%;
 }
 
+/* Keep avatar perfectly circular on all viewports */
+body.home-clean-blue .author__avatar img {
+  border-radius: 50%;
+  height: 140px;
+  object-fit: cover;
+  width: 140px;
+}
+
 @media (max-width: 1024px) {
   .author__urls-wrapper .author__urls {
     display: none !important;
