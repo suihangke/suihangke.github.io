@@ -54,8 +54,12 @@ body.home-clean-blue .masthead {
 body.home-clean-blue .masthead__inner-wrap,
 body.home-clean-blue .masthead__menu,
 body.home-clean-blue .greedy-nav,
-body.home-clean-blue .greedy-nav .visible-links {
-  background: #c2def8;
+body.home-clean-blue .greedy-nav .visible-links,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
+.greedy-nav .visible-links {
+  background: #f7fbff;
 }
 
 body.home-clean-blue .page {
@@ -298,6 +302,12 @@ body.home-clean-blue .edu-time {
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 0.2rem;
+}
+
+body.home-clean-blue .edu-note {
+  color: #6686a3;
+  font-size: 0.84rem;
+  margin-top: 0.16rem;
 }
 
 body.home-clean-blue .ack-box {

@@ -80,14 +80,16 @@ I aim to develop **unified learning paradigms** that bridge representation and g
     <div class="edu-time">2024-present</div>
   </div>
   <div class="edu-item">
-    <div class="edu-degree">Bachelor of Science in Mathematics, double major in Decision Analytics (First Class Honors)</div>
+    <div class="edu-degree">Bachelor of Science in Mathematics, double major in Decision Analytics</div>
     <div class="edu-school">University of Hong Kong</div>
     <div class="edu-time">2020-2024</div>
-        <div class="edu-degree">Exchange Student in Mathematics (Dean's Honors List)</div>
-    <div class="edu-school">University of California, Los Angeles</div>
-    <div class="edu-time">Jan 2023-June 2023</div>
+    <div class="edu-note">First Class Honors</div>
   </div>
   <div class="edu-item">
+    <div class="edu-degree">Exchange Student in Mathematics</div>
+    <div class="edu-school">University of California, Los Angeles</div>
+    <div class="edu-time">Jan 2023-June 2023</div>
+    <div class="edu-note">Dean's Honors List</div>
   </div>
 </div>
 
