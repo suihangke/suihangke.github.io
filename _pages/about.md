@@ -13,7 +13,19 @@ I am a second-year PhD student in Electrical and Computer Engineering at the Uni
 
 <h2 id="research-interests">Research Interests</h2>
 
-My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>. I am interested in developing theoretically grounded and scalable learning frameworks that unify representation and generation across modalities. More broadly, I view multimodal learning and generative modeling not as separate problems, but as two complementary perspectives on building general-purpose intelligent systems.
+<!-- My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>. I am interested in developing theoretically grounded and scalable learning frameworks that unify representation and generation across modalities. More broadly, I view multimodal learning and generative modeling not as separate problems, but as two complementary perspectives on building general-purpose intelligent systems. -->
+
+<p>
+My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>.
+</p>
+
+<p>
+I am interested in developing <strong>theoretically grounded and scalable learning frameworks</strong> for multimodal intelligence. In particular, I study <strong>multimodal representation learning</strong> through new perspectives and principled objectives for cross-modal understanding, and <strong>generative modeling</strong> with an emphasis on <strong>efficient and controllable generation</strong>.
+</p>
+
+<p>
+More broadly, I am interested in <strong>unified learning paradigms</strong> that connect representation and generation across modalities. I view them not as isolated problems, but as two tightly connected aspects of the same underlying challenge: building intelligent systems that can <strong>understand, reason, and generate</strong> in complex real-world settings.
+</p>
 
 <h2 id="publications">Publications</h2>
 
