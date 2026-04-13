@@ -38,6 +38,8 @@ I aim to develop **unified learning paradigms** that bridge representation and g
     <div class="showcase-venue"><em>The Fourteenth International Conference on Learning Representations (ICLR 2026)</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=BjL4CSNJug">PDF</a>
+      <a class="showcase-btn" href="https://github.com/suihangke/UniCon">Code (coming soon)</a>
+      <a class="showcase-btn" href="/files/slides_UniCon.pdf">Slides</a>
     </div>
   </div>
 </div>
