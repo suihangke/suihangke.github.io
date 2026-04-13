@@ -56,7 +56,7 @@ I aim to develop **unified learning paradigms** that bridge representation and g
       <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
     </div>
     <div class="showcase-venue">ARPA-H Funded Project</div>
-    <div class="showcase-submeta">Timeline: 2024-present</div>
+    <div class="showcase-submeta">2024-present</div>
     <div class="showcase-authors">
       <em>
         Collaborated with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
@@ -87,12 +87,8 @@ I aim to develop **unified learning paradigms** that bridge representation and g
 </div>
 
 <div class="ack-box">
-  I am grateful to Prof. [Xiaoming Yuan](https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en) and Prof. [Lequan YU](https://yulequan.github.io/) for introducing me to research and providing guidance during my undergraduate studies. I also had the privilege of being advised by Prof. [Justin Wan](https://cs.uwaterloo.ca/~jwlwan/) at the David R. Cheriton School of Computer Science, University of Waterloo. I am sincerely thankful 
-to all the exceptional professors and mentors 
-I've met along the way, who have profoundly 
-shaped my understanding of mathematics, 
-statistics, and computer science.
+  I am grateful to Prof. <a href="https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en">Xiaoming Yuan</a> and Prof. <a href="https://yulequan.github.io/">Lequan YU</a> for introducing me to research and providing guidance during my undergraduate studies. I also had the privilege of being advised by Prof. <a href="https://cs.uwaterloo.ca/~jwlwan/">Justin Wan</a> at the David R. Cheriton School of Computer Science, University of Waterloo. I am sincerely thankful to all the exceptional professors and mentors I have met along the way, who have profoundly shaped my understanding of mathematics, statistics, and computer science.
 </div>
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=8fbde6&w=300&t=n&d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI&co=f7fbff&cmo=6da7e8&cmn=4cb3d4&ct=5d7894'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=8fbde6&w=300&t=n&d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI&co=ffffff&cmo=6da7e8&cmn=4cb3d4&ct=5d7894'></script>
 
