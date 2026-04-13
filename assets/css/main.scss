@@ -48,6 +48,7 @@ body.home-clean-blue {
 body.home-clean-blue .masthead {
   background: #f7fbff;
   border-bottom: 1px solid #dcecff;
+  box-shadow: 0 2px 10px rgba(73, 126, 179, 0.08);
 }
 
 body.home-clean-blue .page {
@@ -77,6 +78,61 @@ body.home-clean-blue .page__content a {
 
 body.home-clean-blue .page__content a:hover {
   color: #155a97;
+}
+
+body.home-clean-blue .masthead__menu-item--lg a {
+  color: #1d4c7a;
+  font-weight: 700;
+}
+
+body.home-clean-blue .masthead__menu-item a {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #2c6296;
+  font-weight: 600;
+  margin: 0 0.18rem;
+  padding: 0.25rem 0.62rem;
+  transition: all 0.18s ease;
+}
+
+body.home-clean-blue .masthead__menu-item a:hover {
+  background: #ebf5ff;
+  border-color: #c2def8;
+  color: #174d82;
+  text-decoration: none;
+}
+
+body.home-clean-blue .research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+body.home-clean-blue .topic-tag {
+  border: 1px solid;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.16rem 0.7rem;
+}
+
+body.home-clean-blue .topic-mm {
+  background: #eaf4ff;
+  border-color: #b9dafc;
+  color: #1c5f98;
+}
+
+body.home-clean-blue .topic-gen {
+  background: #eef1ff;
+  border-color: #ccd3ff;
+  color: #3f4a9e;
+}
+
+body.home-clean-blue .topic-health {
+  background: #ebf9f7;
+  border-color: #bfe8de;
+  color: #1e6d67;
 }
 
 /* Render inline code as clean rounded tags on homepage */
@@ -172,7 +228,13 @@ body.home-clean-blue .showcase-venue {
   color: #2a567e;
   font-size: 1.03rem;
   font-style: italic;
-  margin-bottom: 0.58rem;
+  margin-bottom: 0.22rem;
+}
+
+body.home-clean-blue .showcase-submeta {
+  color: #5d7894;
+  font-size: 0.92rem;
+  margin-bottom: 0.55rem;
 }
 
 body.home-clean-blue .showcase-links {

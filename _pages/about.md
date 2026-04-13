@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-## About Me
+<h2 id="about">About Me</h2>
 
 I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo).
 
@@ -15,13 +15,17 @@ My research lies at the intersection of **multimodal representation learning, ge
 
 Before joining UIUC, I received my B.Sc. in Mathematics with a double major in Decision Analytics from the University of Hong Kong.
 
-## Research Interests
+<h2 id="research-interests">Research Interests</h2>
 
-`Multimodal Representation Learning` `Generative Modeling` `AI for Healthcare and Biomedicine`
+<div class="research-tags">
+  <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
+  <span class="topic-tag topic-gen">Generative Modeling</span>
+  <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
+</div>
 
 I aim to develop unified learning paradigms that bridge representation and generation across modalities.
 
-## Publications
+<h2 id="publications">Publications</h2>
 
 <div class="showcase-item">
   <div class="showcase-badge badge-publication">ICLR 2026</div>
@@ -40,7 +44,7 @@ I aim to develop unified learning paradigms that bridge representation and gener
 - Achieved up to **461x speedup** in multimodal alignment training while matching or exceeding performance on synthetic, unimodal, and multimodal benchmarks.
 - Establishes a principled foundation for **efficient multimodal foundation models** and **theoretically grounded representation learning**. -->
 
-## Selected Project
+<h2 id="projects">Selected Projects</h2>
 
 <div class="showcase-item">
   <div class="showcase-badge badge-project">ARPA-H</div>
@@ -48,9 +52,9 @@ I aim to develop unified learning paradigms that bridge representation and gener
     <div class="showcase-title">MASCOT: Manufacturing Agile and Scalable Organoid Tumor Models</div>
     <div class="showcase-tags">
       <code>AI for Healthcare and Biomedicine</code>
-      <span class="showcase-meta">2024-present</span>
     </div>
     <div class="showcase-venue">ARPA-H Funded Project</div>
+    <div class="showcase-submeta">Timeline: 2024-present</div>
     <div class="showcase-authors">
       <em>
         Collaborated with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
@@ -65,7 +69,7 @@ I aim to develop unified learning paradigms that bridge representation and gener
   </div>
 </div>
 
-## Education
+<h2 id="education">Education</h2>
 
 **PhD in Electrical and Computer Engineering**  
 *University of Illinois Urbana-Champaign*  
