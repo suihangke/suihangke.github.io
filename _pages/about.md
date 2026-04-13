@@ -9,9 +9,9 @@ redirect_from:
 
 <h2 id="about">About Me</h2>
 
-I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo).
+I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo). I am also fortunate to work closely with Professor [Ge Liu](https://www.mit.edu/~geliu/).
 
-My research lies at the intersection of **multimodal representation learning, generative modeling, and AI for healthcare**. I am particularly interested in developing **theoretically grounded and scalable learning frameworks** that unify representation and generation across modalities, with applications to healthcare and biomedicine.
+My research lies at the intersection of **multimodal representation learning, generative modeling, and AI for healthcare/biomedicine**. I am particularly interested in developing theoretically grounded learning frameworks that unify representation and generation across modalities, with applications to healthcare and biomedicine.
 
 Before joining UIUC, I received my B.Sc. in Mathematics with a double major in Decision Analytics from the University of Hong Kong.
 
@@ -73,15 +73,26 @@ I aim to develop unified learning paradigms that bridge representation and gener
 
 <h2 id="education">Education</h2>
 
-**PhD in Electrical and Computer Engineering**  
-*University of Illinois Urbana-Champaign*  
-2024–Present
+<div class="edu-list">
+  <div class="edu-item">
+    <div class="edu-degree">PhD in Electrical and Computer Engineering</div>
+    <div class="edu-school">University of Illinois Urbana-Champaign</div>
+    <div class="edu-time">2024-present</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-degree">Bachelor of Science in Mathematics (double major in Decision Analytics)</div>
+    <div class="edu-school">University of Hong Kong</div>
+    <div class="edu-time">2020-2024</div>
+  </div>
+</div>
 
-**Bachelor of Science in Mathematics**  
-*University of Hong Kong*  
-2020–2024
-
-I am grateful to Prof. [Xiaoming Yuan](https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en) and Prof. [Lequan YU](https://yulequan.github.io/) for introducing me to research and providing guidance during my undergraduate studies. Additionally, I had the privilege of being advised by Prof. [Justin Wan](https://cs.uwaterloo.ca/~jwlwan/) at the David R. Cheriton School of Computer Science, University of Waterloo. I am sincerely thankful to all the exceptional professors and mentors I've met along the way, who have profoundly shaped my understanding of mathematics, statistics, and computer science.
+<div class="ack-box">
+  I am grateful to Prof. [Xiaoming Yuan](https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en) and Prof. [Lequan YU](https://yulequan.github.io/) for introducing me to research and providing guidance during my undergraduate studies. I also had the privilege of being advised by Prof. [Justin Wan](https://cs.uwaterloo.ca/~jwlwan/) at the David R. Cheriton School of Computer Science, University of Waterloo. I am sincerely thankful 
+to all the exceptional professors and mentors 
+I've met along the way, who have profoundly 
+shaped my understanding of mathematics, 
+statistics, and computer science.
+</div>
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=a8a8a8&w=300&t=n&d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI&co=ffffff&cmo=b7d1e2&cmn=c8b5d8&ct=808080'></script>
 

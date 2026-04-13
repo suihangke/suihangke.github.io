@@ -260,6 +260,48 @@ body.home-clean-blue .showcase-btn:hover {
   color: #174e83;
 }
 
+body.home-clean-blue .edu-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.4rem 0 1rem;
+}
+
+body.home-clean-blue .edu-item {
+  background: #f7fbff;
+  border: 1px solid #d6e8fb;
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+}
+
+body.home-clean-blue .edu-degree {
+  color: #184a7a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+body.home-clean-blue .edu-school {
+  color: #2a618f;
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+body.home-clean-blue .edu-time {
+  color: #557692;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+body.home-clean-blue .ack-box {
+  background: #f3f8ff;
+  border-left: 4px solid #89b8e8;
+  border-radius: 10px;
+  color: #24496b;
+  margin: 0.85rem 0 0.2rem;
+  padding: 0.7rem 0.9rem;
+}
+
 @media (max-width: 740px) {
   body.home-clean-blue .showcase-item {
     flex-direction: column;
