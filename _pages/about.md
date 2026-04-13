@@ -23,7 +23,7 @@ Before joining UIUC, I received my B.Sc. in Mathematics with a double major in D
   <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
 </div>
 
-I aim to develop unified learning paradigms that bridge representation and generation across modalities.
+I aim to develop **unified learning paradigms** that bridge representation and generation across modalities.
 
 <h2 id="publications">Publications</h2>
 
@@ -94,5 +94,5 @@ shaped my understanding of mathematics,
 statistics, and computer science.
 </div>
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=a8a8a8&w=300&t=n&d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI&co=ffffff&cmo=b7d1e2&cmn=c8b5d8&ct=808080'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=8fbde6&w=300&t=n&d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI&co=f7fbff&cmo=6da7e8&cmn=4cb3d4&ct=5d7894'></script>
 
