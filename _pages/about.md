@@ -31,7 +31,9 @@ I aim to develop unified learning paradigms that bridge representation and gener
   <div class="showcase-badge badge-publication">ICLR 2026</div>
   <div class="showcase-content">
     <div class="showcase-title">UniCon: Unified Framework for Contrastive Multimodal Alignment</div>
-    <div class="showcase-tags"><code>Multimodal Representation Learning</code></div>
+    <div class="showcase-tags">
+      <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
+    </div>
     <div class="showcase-authors"><em><strong><u>Hangke Sui&#42;</u></strong>, Yuqing Wang&#42;, Minh N. Do</em></div>
     <div class="showcase-venue"><em>The Fourteenth International Conference on Learning Representations (ICLR 2026)</em></div>
     <div class="showcase-links">
@@ -51,7 +53,7 @@ I aim to develop unified learning paradigms that bridge representation and gener
   <div class="showcase-content">
     <div class="showcase-title">MASCOT: Manufacturing Agile and Scalable Organoid Tumor Models</div>
     <div class="showcase-tags">
-      <code>AI for Healthcare and Biomedicine</code>
+      <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
     </div>
     <div class="showcase-venue">ARPA-H Funded Project</div>
     <div class="showcase-submeta">Timeline: 2024-present</div>
