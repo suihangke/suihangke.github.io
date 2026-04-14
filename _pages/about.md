@@ -28,10 +28,10 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 <h2 id="publications">Publications</h2>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-conference">ICLR 2026</div>
   <div class="showcase-content">
     <div class="showcase-title">UniCon: Unified Framework for Contrastive Multimodal Alignment</div>
-    <div class="showcase-tags">
+    <div class="showcase-meta-row">
+      <span class="showcase-badge badge-conference">ICLR 2026</span>
       <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
     </div>
     <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Yuqing Wang&#42;, Minh N. Do</em></div>
@@ -45,10 +45,10 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-workshop">ICLR GRaM 2026</div>
   <div class="showcase-content">
     <div class="showcase-title">Mixed-Curvature Product Space Multimodal Contrastive Alignment</div>
-    <div class="showcase-tags">
+    <div class="showcase-meta-row">
+      <span class="showcase-badge badge-workshop">ICLR GRaM 2026</span>
       <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
     </div>
     <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</em></div>
@@ -60,10 +60,10 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-arxiv">ArXiv</div>
   <div class="showcase-content">
     <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
-    <div class="showcase-tags">
+    <div class="showcase-meta-row">
+      <span class="showcase-badge badge-arxiv">ArXiv</span>
       <span class="topic-tag topic-gen">Generative Modeling</span>
     </div>
     <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong>Hangke Sui</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
@@ -81,10 +81,10 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 <h2 id="projects">Selected Projects</h2>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-project">ARPA-H</div>
   <div class="showcase-content">
     <div class="showcase-title">MASCOT: Manufacturing Agile and Scalable Organoid Tumor Models</div>
-    <div class="showcase-tags">
+    <div class="showcase-meta-row">
+      <span class="showcase-badge badge-project">ARPA-H</span>
       <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
     </div>
     <div class="showcase-venue">ARPA-H Funded Project, 2024-present</div>
