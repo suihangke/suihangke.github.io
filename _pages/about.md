@@ -44,6 +44,24 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
   </div>
 </div>
 
+<div class="showcase-item">
+  <div class="showcase-badge badge-publication">ArXiv</div>
+  <div class="showcase-content">
+    <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
+    <div class="showcase-tags">
+      <span class="topic-tag topic-gen">Generative Modeling</span>
+    </div>
+    <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong><u>Hangke Sui</u></strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
+    <div class="showcase-venue"><em>arXiv preprint, 2026</em></div>
+    <div class="showcase-links">
+      <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">Paper</a>
+      <a class="showcase-btn" href="https://github.com/nealchen2003/LangFlow">Code</a>
+      <a class="showcase-btn" href="https://huggingface.co/Continuous-Rivals-Discrete">HuggingFace</a>
+      <a class="showcase-btn" href="https://caradryanl.github.io/blog/2026/langflow/">Blog</a>
+    </div>
+  </div>
+</div>
+
 
 <h2 id="projects">Selected Projects</h2>
 
