@@ -180,48 +180,48 @@ body.home-clean-blue .page__content hr {
 
 /* Fancy publication/project rows for homepage */
 body.home-clean-blue {
-  --showcase-space-xs: 0.2rem;
-  --showcase-space-sm: 0.4rem;
-  --showcase-space-md: 0.65rem;
-  --showcase-space-lg: 1.2rem;
+  --showcase-space-xs: 0.14rem;
+  --showcase-space-sm: 0.28rem;
+  --showcase-space-md: 0.48rem;
+  --showcase-space-lg: 0.9rem;
 }
 
 body.home-clean-blue .showcase-item {
   display: block;
-  margin: var(--showcase-space-lg) 0 calc(var(--showcase-space-lg) + 0.35rem);
+  margin: var(--showcase-space-lg) 0 1.2rem;
 }
 
 body.home-clean-blue .showcase-badge {
   align-items: center;
-  background: #edf5fe;
-  border: 1px solid #d5e6f8;
+  background: #f1f7ff;
+  border: 1px solid #dbe9f8;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(45, 90, 145, 0.12);
-  color: #315f8d;
+  box-shadow: 0 1px 3px rgba(45, 90, 145, 0.08);
+  color: #3a678f;
   display: inline-flex;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1;
   justify-content: center;
-  min-width: 158px;
-  padding: 0.5rem 0.75rem;
+  min-width: 150px;
+  padding: 0.36rem 0.65rem;
   text-align: center;
 }
 
 body.home-clean-blue .badge-conference {
-  background: linear-gradient(90deg, #d9ecff 0%, #cfe6ff 100%) !important;
-  color: #2b5f93 !important;
+  background: linear-gradient(90deg, #e6f1ff 0%, #dcecff 100%) !important;
+  color: #3a6796 !important;
 }
 
 body.home-clean-blue .badge-workshop {
-  background: linear-gradient(90deg, #e7e2ff 0%, #ddd7ff 100%) !important;
-  color: #53489a !important;
+  background: linear-gradient(90deg, #efeafe 0%, #e6e0fc 100%) !important;
+  color: #6558a5 !important;
 }
 
 body.home-clean-blue .badge-arxiv {
-  background: linear-gradient(90deg, #ebeff4 0%, #e1e6ec 100%) !important;
-  color: #5d6c7d !important;
+  background: linear-gradient(90deg, #f0f2f6 0%, #e7ebf1 100%) !important;
+  color: #667587 !important;
 }
 
 body.home-clean-blue .badge-project {
@@ -235,7 +235,7 @@ body.home-clean-blue .showcase-content {
 
 body.home-clean-blue .showcase-title {
   color: #173f67;
-  font-size: 1.1rem;
+  font-size: 1.04rem;
   font-weight: 700;
   line-height: 1.32;
   margin: 0;
@@ -253,8 +253,17 @@ body.home-clean-blue .showcase-tags {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.42rem;
   margin: var(--showcase-space-sm) 0 var(--showcase-space-md);
+}
+
+body.home-clean-blue .showcase-tags .topic-tag {
+  background: #f4f7fb;
+  border-color: #e1e8f1;
+  color: #6a7888;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.1rem 0.52rem;
 }
 
 body.home-clean-blue .showcase-meta {
