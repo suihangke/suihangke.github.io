@@ -257,6 +257,18 @@ body.home-clean-blue .showcase-tags {
   margin: var(--showcase-space-sm) 0 var(--showcase-space-md);
 }
 
+body.home-clean-blue .showcase-tags .meta-tag {
+  background: #f4f7fb !important;
+  border: 1px solid #e1e8f1 !important;
+  border-radius: 999px;
+  color: #6a7888 !important;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 0.1rem 0.52rem;
+}
+
 body.home-clean-blue .showcase-tags .topic-tag {
   background: #f4f7fb;
   border-color: #e1e8f1;

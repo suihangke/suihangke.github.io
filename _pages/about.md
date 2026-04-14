@@ -34,7 +34,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     </div>
     <div class="showcase-title">UniCon: Unified Framework for Contrastive Multimodal Alignment</div>
     <div class="showcase-tags">
-      <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
+      <span class="meta-tag">Multimodal Representation Learning</span>
     </div>
     <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Yuqing Wang&#42;, Minh N. Do</em></div>
     <div class="showcase-venue"><em>The Fourteenth International Conference on Learning Representations (ICLR 2026)</em></div>
@@ -53,7 +53,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     </div>
     <div class="showcase-title">Mixed-Curvature Product Space Multimodal Contrastive Alignment</div>
     <div class="showcase-tags">
-      <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
+      <span class="meta-tag">Multimodal Representation Learning</span>
     </div>
     <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</em></div>
     <div class="showcase-venue"><em>Accepted at GRaM Workshop @ ICLR 2026</em></div>
@@ -70,7 +70,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     </div>
     <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
     <div class="showcase-tags">
-      <span class="topic-tag topic-gen">Generative Modeling</span>
+      <span class="meta-tag">Generative Modeling</span>
     </div>
     <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong>Hangke Sui</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
     <div class="showcase-venue"><em>arXiv preprint, 2026</em></div>
@@ -93,7 +93,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     </div>
     <div class="showcase-title">MASCOT: Manufacturing Agile and Scalable Organoid Tumor Models</div>
     <div class="showcase-tags">
-      <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>
+      <span class="meta-tag">AI for Healthcare and Biomedicine</span>
     </div>
     <div class="showcase-venue">ARPA-H Funded Project, 2024-present</div>
     <div class="showcase-authors">
