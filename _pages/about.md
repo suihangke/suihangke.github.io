@@ -45,6 +45,21 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
+  <div class="showcase-badge badge-publication">ICLR GRaM 2026</div>
+  <div class="showcase-content">
+    <div class="showcase-title">Mixed-Curvature Product Space Multimodal Contrastive Alignment</div>
+    <div class="showcase-tags">
+      <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
+    </div>
+    <div class="showcase-authors"><em><strong><u>Hangke Sui&#42;</u></strong>, Jiakai Chen&#42;</em></div>
+    <div class="showcase-venue"><em>Accepted at ICLR GRaM Workshop 2026</em></div>
+    <div class="showcase-links">
+      <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">Paper</a>
+    </div>
+  </div>
+</div>
+
+<div class="showcase-item">
   <div class="showcase-badge badge-publication">ArXiv</div>
   <div class="showcase-content">
     <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
