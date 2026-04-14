@@ -52,7 +52,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
       <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
     </div>
     <div class="showcase-authors"><em><strong><u>Hangke Sui&#42;</u></strong>, Jiakai Chen&#42;</em></div>
-    <div class="showcase-venue"><em>Accepted at ICLR GRaM Workshop 2026</em></div>
+    <div class="showcase-venue"><em>Accepted at GRaM Workshop @ ICLR 2026</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">Paper</a>
     </div>
