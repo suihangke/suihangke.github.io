@@ -356,12 +356,34 @@ body.home-clean-blue .author__avatar img {
 }
 
 @media (max-width: 1024px) {
-  .author__urls-wrapper .author__urls {
+  .author__urls-wrapper {
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .author__urls-wrapper button {
     display: none !important;
   }
 
-  .author__urls-wrapper button.open + .author__urls {
+  .author__urls-wrapper .author__urls {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
     display: block !important;
-    z-index: 20;
+    margin-top: 0.35rem !important;
+    padding: 0 !important;
+    position: static !important;
+    right: auto !important;
+    z-index: auto !important;
+  }
+
+  .author__urls-wrapper .author__urls::before,
+  .author__urls-wrapper .author__urls::after {
+    display: none !important;
+  }
+
+  .author__urls-wrapper .author__urls li {
+    margin-bottom: 0.3rem;
   }
 }
