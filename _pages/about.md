@@ -28,13 +28,13 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 <h2 id="publications">Publications</h2>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-publication">ICLR 2026</div>
+  <div class="showcase-badge badge-conference">ICLR 2026</div>
   <div class="showcase-content">
     <div class="showcase-title">UniCon: Unified Framework for Contrastive Multimodal Alignment</div>
     <div class="showcase-tags">
       <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
     </div>
-    <div class="showcase-authors"><em><strong><u>Hangke Sui&#42;</u></strong>, Yuqing Wang&#42;, Minh N. Do</em></div>
+    <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Yuqing Wang&#42;, Minh N. Do</em></div>
     <div class="showcase-venue"><em>The Fourteenth International Conference on Learning Representations (ICLR 2026)</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=BjL4CSNJug">PDF</a>
@@ -45,13 +45,13 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-publication">ICLR GRaM 2026</div>
+  <div class="showcase-badge badge-workshop">ICLR GRaM 2026</div>
   <div class="showcase-content">
     <div class="showcase-title">Mixed-Curvature Product Space Multimodal Contrastive Alignment</div>
     <div class="showcase-tags">
       <span class="topic-tag topic-mm">Multimodal Representation Learning</span>
     </div>
-    <div class="showcase-authors"><em><strong><u>Hangke Sui&#42;</u></strong>, Jiakai Chen&#42;</em></div>
+    <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</em></div>
     <div class="showcase-venue"><em>Accepted at GRaM Workshop @ ICLR 2026</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">Paper</a>
@@ -60,13 +60,13 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
-  <div class="showcase-badge badge-publication">ArXiv</div>
+  <div class="showcase-badge badge-arxiv">ArXiv</div>
   <div class="showcase-content">
     <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
     <div class="showcase-tags">
       <span class="topic-tag topic-gen">Generative Modeling</span>
     </div>
-    <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong><u>Hangke Sui</u></strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
+    <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong>Hangke Sui</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
     <div class="showcase-venue"><em>arXiv preprint, 2026</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">Paper</a>

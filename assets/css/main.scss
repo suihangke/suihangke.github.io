@@ -179,28 +179,44 @@ body.home-clean-blue .page__content hr {
 }
 
 /* Fancy publication/project rows for homepage */
+body.home-clean-blue {
+  --showcase-space-xs: 0.2rem;
+  --showcase-space-sm: 0.4rem;
+  --showcase-space-md: 0.65rem;
+  --showcase-space-lg: 1.2rem;
+}
+
 body.home-clean-blue .showcase-item {
   align-items: flex-start;
   display: flex;
-  gap: 1rem;
-  margin: 1.1rem 0 1.6rem;
+  gap: var(--showcase-space-lg);
+  margin: var(--showcase-space-lg) 0 calc(var(--showcase-space-lg) + 0.35rem);
 }
 
 body.home-clean-blue .showcase-badge {
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(38, 106, 176, 0.2);
+  box-shadow: 0 4px 10px rgba(38, 106, 176, 0.16);
   color: #ffffff;
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1;
-  min-width: 118px;
+  flex: 0 0 158px;
+  min-width: 158px;
   padding: 0.5rem 0.75rem;
   text-align: center;
 }
 
-body.home-clean-blue .badge-publication {
+body.home-clean-blue .badge-conference {
   background: linear-gradient(90deg, #6da7e8 0%, #5c88e8 100%);
+}
+
+body.home-clean-blue .badge-workshop {
+  background: linear-gradient(90deg, #8f86e8 0%, #7367dd 100%);
+}
+
+body.home-clean-blue .badge-arxiv {
+  background: linear-gradient(90deg, #a9b3c1 0%, #8e99aa 100%);
 }
 
 body.home-clean-blue .badge-project {
@@ -216,7 +232,7 @@ body.home-clean-blue .showcase-title {
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.32;
-  margin-bottom: 0.25rem;
+  margin: 0;
 }
 
 body.home-clean-blue .showcase-tags {
@@ -224,7 +240,7 @@ body.home-clean-blue .showcase-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin: 0.2rem 0 0.42rem;
+  margin: var(--showcase-space-sm) 0 var(--showcase-space-md);
 }
 
 body.home-clean-blue .showcase-meta {
@@ -241,14 +257,14 @@ body.home-clean-blue .showcase-authors {
   color: #203f61;
   font-size: 0.95rem;
   line-height: 1.4;
-  margin-bottom: 0.15rem;
+  margin: 0 0 var(--showcase-space-xs);
 }
 
 body.home-clean-blue .showcase-venue {
-  color: #2a567e;
+  color: #77879a;
   font-size: 0.96rem;
   font-style: italic;
-  margin-bottom: 0.22rem;
+  margin: 0 0 var(--showcase-space-md);
 }
 
 body.home-clean-blue .showcase-submeta {
@@ -260,6 +276,7 @@ body.home-clean-blue .showcase-submeta {
 body.home-clean-blue .showcase-links {
   display: flex;
   gap: 0.55rem;
+  margin-top: 0;
 }
 
 body.home-clean-blue .showcase-btn {
