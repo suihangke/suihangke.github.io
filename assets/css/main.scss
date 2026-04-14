@@ -193,10 +193,11 @@ body.home-clean-blue .showcase-item {
 
 body.home-clean-blue .showcase-badge {
   align-items: center;
-  background: #e7f1fb;
+  background: #edf5fe;
+  border: 1px solid #d5e6f8;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(38, 106, 176, 0.16);
-  color: #1e5d95;
+  box-shadow: 0 2px 6px rgba(45, 90, 145, 0.12);
+  color: #315f8d;
   display: inline-flex;
   font-size: 0.92rem;
   font-weight: 700;
@@ -209,19 +210,23 @@ body.home-clean-blue .showcase-badge {
 }
 
 body.home-clean-blue .badge-conference {
-  background: linear-gradient(90deg, #6da7e8 0%, #5c88e8 100%);
+  background: linear-gradient(90deg, #d9ecff 0%, #cfe6ff 100%) !important;
+  color: #2b5f93 !important;
 }
 
 body.home-clean-blue .badge-workshop {
-  background: linear-gradient(90deg, #8f86e8 0%, #7367dd 100%);
+  background: linear-gradient(90deg, #e7e2ff 0%, #ddd7ff 100%) !important;
+  color: #53489a !important;
 }
 
 body.home-clean-blue .badge-arxiv {
-  background: linear-gradient(90deg, #a9b3c1 0%, #8e99aa 100%);
+  background: linear-gradient(90deg, #ebeff4 0%, #e1e6ec 100%) !important;
+  color: #5d6c7d !important;
 }
 
 body.home-clean-blue .badge-project {
-  background: linear-gradient(90deg, #4cb3d4 0%, #3f8cc6 100%);
+  background: linear-gradient(90deg, #d9f1f8 0%, #cfeaf4 100%) !important;
+  color: #2f6f87 !important;
 }
 
 body.home-clean-blue .showcase-content {
@@ -237,6 +242,14 @@ body.home-clean-blue .showcase-title {
 }
 
 body.home-clean-blue .showcase-meta-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 var(--showcase-space-sm);
+}
+
+body.home-clean-blue .showcase-tags {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
