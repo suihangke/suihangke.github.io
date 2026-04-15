@@ -27,9 +27,21 @@
   --content-gap: 64px;
   --page-pad: 88px;
   --card-top: 12px;
+  --cards-top: calc(var(--nav-height) + var(--card-top));
+  --card-pad-top: 22px;
   /* Main text block sizing */
   --main-pad: 80px;
   --text-max: 1180px;
+}
+
+/* Desktop: make side margins + column gap responsive to viewport width */
+@media (min-width: 1025px) {
+  :root {
+    --page-pad: clamp(16px, 4.5vw, 72px);
+    --content-gap: clamp(18px, 4vw, 72px);
+    --info-card-width: clamp(220px, 22vw, 300px);
+    --main-pad: clamp(24px, 5vw, 80px);
+  }
 }
 
 html { scroll-behavior: smooth; height: 100%; }
@@ -37,9 +49,7 @@ html { scroll-behavior: smooth; height: 100%; }
 body {
   margin: 0;
   min-height: 100%;
-  background:
-    url("/images/background.png") top center / 100% auto repeat-y scroll,
-    var(--bg);
+  background: transparent;
   color: var(--text);
   font-family: "Forum", "Noto Serif HK", ui-serif, Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
@@ -48,6 +58,8 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 0;
 }
 
 /* Slightly larger typography inside the main content card */
@@ -62,8 +74,17 @@ h1, h2, h3, .top-nav .brand {
   font-weight: 400;
 }
 
-/* Disable grain/overlay so all grays match exactly */
-body::before { display: none; }
+/* Full-page background layer stretched to DOCUMENT height */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    url("/images/background.png") center top / 100% var(--bg-doc-h, 100%) no-repeat,
+    var(--bg);
+}
 
 /* Very subtle grain to avoid banding on large gradients */
 body::after {
@@ -132,7 +153,9 @@ main.content { padding: 0 !important; }
   background: transparent;
   position: fixed;
   isolation: isolate;
-  border-bottom: 0;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  outline: 0;
   /* Make the bottom border span full viewport width even inside Quarto wrappers */
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -143,16 +166,17 @@ main.content { padding: 0 !important; }
 .top-nav::before {
   content: "";
   position: absolute;
-  inset: 0;
+  /* Extend 1-2px below to avoid seam line */
+  inset: 0 0 -2px 0;
   z-index: -1;
   pointer-events: none;
   /* Paint the same background image (opaque) so only it is visible */
   background-color: var(--bg);
   background-image: url("/images/background.png");
-  background-repeat: repeat-y;
-  background-size: 100% auto;
-  background-position: top center;
-  background-position-y: calc(0px - var(--bg-scroll-y, 0px));
+  background-repeat: no-repeat;
+  background-size: 100% var(--bg-doc-h, 100%);
+  /* Scroll-sync so the navbar "sees" the moving background */
+  background-position: center calc(0px - var(--bg-scroll-y, 0px));
 }
 
 .top-nav .brand,
@@ -177,6 +201,40 @@ main.content { padding: 0 !important; }
   gap: 0.5rem;
   flex-wrap: wrap;
 }
+
+/* Mobile-only hamburger button (hidden on desktop) */
+.top-nav .nav-toggle {
+  display: none;
+  margin-left: auto;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.top-nav .nav-toggle:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline-offset: 2px;
+}
+.top-nav .nav-toggle-icon {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+}
+.top-nav .nav-toggle-icon::before,
+.top-nav .nav-toggle-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+}
+.top-nav .nav-toggle-icon::before { top: -7px; }
+.top-nav .nav-toggle-icon::after { top: 7px; }
 
 .top-nav .nav-links a {
   text-decoration: none;
@@ -221,15 +279,15 @@ main.content { padding: 0 !important; }
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
-  /* Leave room for fixed navbar + fixed profile card */
-  padding: calc(var(--nav-height) + var(--card-top)) var(--page-pad) 0 calc(var(--page-pad) + var(--info-card-width) + var(--content-gap)) !important;
+  /* Desktop layout: two columns in normal flow */
+  padding: var(--cards-top) var(--page-pad) 0 var(--page-pad) !important;
   box-sizing: border-box;
 }
 
-/* Ensure cards have a visible gap from the fixed navbar */
+/* Desktop: keep both cards top-aligned (container padding/top handles spacing) */
 .profile-card,
 .main-card {
-  margin-top: var(--card-top) !important;
+  margin-top: 0 !important;
 }
 
 .content-shell.page-columns > aside.profile-card {
@@ -246,15 +304,14 @@ main.content { padding: 0 !important; }
   width: var(--info-card-width);
   align-self: flex-start;
   margin: 0;
-  position: fixed;
-  left: var(--page-pad);
-  top: calc(var(--nav-height) + var(--card-top));
-  max-height: calc(100vh - var(--nav-height) - (2 * var(--card-top)));
+  position: sticky;
+  top: var(--cards-top);
+  max-height: calc(100vh - var(--cards-top) - var(--card-top));
   overflow: auto;
   background: var(--panel);
   border: 0;
   border-radius: 0;
-  padding: 22px 28px 16px 28px;
+  padding: var(--card-pad-top) 28px 16px 28px;
   box-sizing: border-box;
   backdrop-filter: none;
   box-shadow: none;
@@ -271,12 +328,13 @@ main.content { padding: 0 !important; }
   box-sizing: border-box;
   backdrop-filter: none;
   min-height: calc(100vh - var(--nav-height) - 48px);
-  overflow: auto;
+  /* Let the PAGE scroll, so the background spans full document height */
+  overflow: visible;
   box-shadow: none;
 }
 
 .main-card .main-inner {
-  padding: 2rem var(--main-pad);
+  padding: var(--card-pad-top) var(--main-pad) 2rem var(--main-pad);
   background: transparent;
 }
 
@@ -342,6 +400,19 @@ main.content { padding: 0 !important; }
 .profile-links a.no-click {
   pointer-events: none;
   cursor: default;
+}
+
+.corner-copyright {
+  position: fixed;
+  left: 16px;
+  bottom: 12px;
+  z-index: 1200;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  line-height: 1.2;
+  background: transparent;
+  border: 0;
+  pointer-events: none;
 }
 
 .profile-links a:hover {
@@ -507,24 +578,118 @@ p, li, .showcase-authors, .showcase-venue {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
+  /* Avoid compositing seams on mobile/tablet */
+  body::after { display: none; }
+  .top-nav { transform: translateZ(0); }
+
+  .top-nav {
+    padding: 0 16px;
+    height: auto;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  /* Mobile navbar: brand + hamburger (links live below the nav) */
+  .top-nav .brand {
+    align-self: center;
+    white-space: nowrap;
+  }
+  .top-nav .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-nav .nav-links {
+    display: none; /* hide desktop links on mobile */
+  }
+
+  /* Mobile menu block that expands BELOW the fixed navbar */
+  .mobile-nav-links {
+    padding: 0 16px 0 16px; /* no hidden spacing when closed */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition:
+      max-height 260ms ease,
+      opacity 200ms ease,
+      transform 260ms ease;
+  }
+  .mobile-nav-links.is-open {
+    padding: calc(var(--nav-height) + 8px) 16px 0 16px;
+    /* Large enough to show all items; keeps transition smooth */
+    max-height: 600px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .mobile-nav-links a {
+    display: block;
+    /* Transparent menu over background (no white box) */
+    color: rgba(255, 255, 255, 0.96);
+    padding: 10px 0;
+    border-radius: 0;
+    background: transparent;
+    backdrop-filter: none;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .mobile-nav-links a:hover {
+    background: transparent;
+    text-decoration: underline;
+  }
+
+  /* Remove desktop fixed-sidebar offset padding on mobile */
+  .content-shell.page-columns,
+  .content-shell.page-full,
+  .content-shell.page-columns.page-full {
+    display: block !important; /* override desktop flex !important */
+    /* Tighter spacing between navbar and first card on mobile */
+    padding: calc(var(--nav-height) + 4px) 16px 0 16px !important;
+    gap: 16px !important;
+  }
+
   .content-shell {
     display: block;
   }
   .profile-card {
-    position: static;
-    left: auto;
-    top: auto;
+    position: static !important; /* ensure not fixed on mobile */
+    left: auto !important;
+    top: auto !important;
     max-height: none;
-    margin: 16px 16px 0 16px;
-    padding-left: 28px;
+    margin: 16px 0 0 0 !important;
+    width: auto !important;
+    flex: none !important;
   }
   .main-card {
-    margin: 16px;
+    margin: 16px 0 16px 0 !important;
     min-height: auto;
+    width: auto !important;
   }
   .main-card .main-inner {
     padding: 1.25rem 1.25rem;
+  }
+
+  /* Mobile: profile links in 3 columns, centered rows */
+  .profile-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    text-align: center;
+    column-gap: 8px;
+    row-gap: 12px;
+  }
+  .profile-links a {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+  .profile-links i.bi {
+    width: auto;
   }
 }
 
