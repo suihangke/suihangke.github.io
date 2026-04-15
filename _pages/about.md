@@ -18,7 +18,7 @@ My research lies at the intersection of <span class="topic-tag topic-mm">Multimo
 </p>
 
 <p>
-I am interested in developing <strong>theoretically grounded and scalable learning frameworks</strong> for multimodal intelligence. In particular, I study <strong>multimodal representation learning</strong> through new perspectives and principled objectives for cross-modal understanding, and <strong>generative modeling</strong> with an emphasis on <strong>efficient and controllable generation</strong>.
+I am interested in developing <strong>theoretically grounded and scalable learning frameworks</strong> for multimodal intelligence. In particular, I study <strong>multimodal representation learning</strong> through novel perspectives and principled objectives for both cross-modal and within-modal understanding, and <strong>generative modeling</strong> with an emphasis on <strong>efficient and controllable generation</strong>.
 </p>
 
 <p>
