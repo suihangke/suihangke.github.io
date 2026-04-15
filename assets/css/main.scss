@@ -90,6 +90,28 @@ body.home-clean-blue .page__content em {
   color: #24496b;
 }
 
+body.home-clean-blue .page__content p,
+body.home-clean-blue .page__content li,
+body.home-clean-blue .showcase-authors,
+body.home-clean-blue .showcase-venue,
+body.home-clean-blue .showcase-submeta,
+body.home-clean-blue .edu-school,
+body.home-clean-blue .edu-time,
+body.home-clean-blue .edu-note,
+body.home-clean-blue .ack-box {
+  font-family: "Crimson Text", "Times New Roman", serif;
+  font-size: 0.96rem;
+}
+
+body.home-clean-blue .showcase-authors,
+body.home-clean-blue .showcase-venue {
+  line-height: 1.35;
+}
+
+body.home-clean-blue #research-interests + p .topic-tag {
+  white-space: nowrap;
+}
+
 body.home-clean-blue .page__content a {
   color: #1d70b8;
   text-decoration-color: #9bc7ef;
