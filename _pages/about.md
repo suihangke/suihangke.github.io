@@ -38,8 +38,8 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     <div class="showcase-venue"><em>The Fourteenth International Conference on Learning Representations (ICLR 2026)</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=BjL4CSNJug">PDF</a>
-      <a class="showcase-btn" href="https://github.com/suihangke/UniCon">Code (coming soon)</a>
-      <a class="showcase-btn" href="/files/slides_UniCon.pdf">Slides</a>
+      <a class="showcase-btn" href="https://github.com/suihangke/UniCon">CODE (coming soon)</a>
+      <a class="showcase-btn" href="/files/slides_UniCon.pdf">SLIDES</a>
     </div>
   </div>
 </div>
@@ -54,7 +54,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</em></div>
     <div class="showcase-venue"><em>Accepted at GRaM Workshop @ ICLR 2026</em></div>
     <div class="showcase-links">
-      <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">Paper</a>
+      <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">PDF</a>
     </div>
   </div>
 </div>
@@ -69,8 +69,8 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong>Hangke Sui</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
     <div class="showcase-venue"><em>arXiv preprint, 2026</em></div>
     <div class="showcase-links">
-      <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">Paper</a>
-      <a class="showcase-btn" href="https://github.com/nealchen2003/LangFlow">Code</a>
+      <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">PDF</a>
+      <a class="showcase-btn" href="https://github.com/nealchen2003/LangFlow">CODE</a>
       <a class="showcase-btn" href="https://huggingface.co/Continuous-Rivals-Discrete">HuggingFace</a>
       <a class="showcase-btn" href="https://caradryanl.github.io/blog/2026/langflow/">Blog</a>
     </div>
