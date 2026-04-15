@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<h2 id="about">About Me</h2>
+<h2 id="about">Hangke Sui</h2>
 
 I am a second-year PhD student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign (UIUC), advised by Professor [Minh N. Do](https://ece.illinois.edu/about/directory/faculty/minhdo). I am also fortunate to work closely with Professor [Ge Liu](https://www.mit.edu/~geliu/). Before joining UIUC, I received my B.Sc. in Mathematics from the University of Hong Kong.
 
