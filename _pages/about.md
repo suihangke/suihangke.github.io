@@ -28,10 +28,8 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 <h2 id="publications">Publications</h2>
 
 <div class="showcase-item">
+  <span class="showcase-badge badge-conference">ICLR 2026</span>
   <div class="showcase-content">
-    <div class="showcase-meta-row">
-      <span class="showcase-badge badge-conference">ICLR 2026</span>
-    </div>
     <div class="showcase-title">UniCon: Unified Framework for Contrastive Multimodal Alignment</div>
     <div class="showcase-tags">
       <span class="meta-tag">Multimodal Representation Learning</span>
@@ -47,10 +45,8 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
+  <span class="showcase-badge badge-workshop">Workshop</span>
   <div class="showcase-content">
-    <div class="showcase-meta-row">
-      <span class="showcase-badge badge-workshop">ICLR GRaM 2026</span>
-    </div>
     <div class="showcase-title">Mixed-Curvature Product Space Multimodal Contrastive Alignment</div>
     <div class="showcase-tags">
       <span class="meta-tag">Multimodal Representation Learning</span>
@@ -64,10 +60,8 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 </div>
 
 <div class="showcase-item">
+  <span class="showcase-badge badge-arxiv">ArXiv</span>
   <div class="showcase-content">
-    <div class="showcase-meta-row">
-      <span class="showcase-badge badge-arxiv">ArXiv</span>
-    </div>
     <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
     <div class="showcase-tags">
       <span class="meta-tag">Generative Modeling</span>
@@ -87,10 +81,8 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 <h2 id="projects">Selected Projects</h2>
 
 <div class="showcase-item">
+  <span class="showcase-badge badge-project">ARPA-H</span>
   <div class="showcase-content">
-    <div class="showcase-meta-row">
-      <span class="showcase-badge badge-project">ARPA-H</span>
-    </div>
     <div class="showcase-title">MASCOT: Manufacturing Agile and Scalable Organoid Tumor Models</div>
     <div class="showcase-tags">
       <span class="meta-tag">AI for Healthcare and Biomedicine</span>
