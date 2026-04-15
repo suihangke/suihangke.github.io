@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - images
+    - files
+
+website:
+  title: "Hangke Sui"
+  site-url: https://suihangke.github.io/
+  description: "Personal academic website of Hangke Sui, ECE PhD student at UIUC, focusing on AI, machine learning, and healthcare."
+  navbar: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true

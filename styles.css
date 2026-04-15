@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300;400;500&display=swap");
+
+:root {
+  /* Inspired by https://daveholloway.uk/ (bold, high-contrast, modern) */
+  /* All-gray background theme */
+  /* Single unified gray used everywhere */
+  /* Ocean palette (from your reference image) */
+  --bg: #2A4D88; /* Deep Blue */
+  --bg_light: #7C94B8; /* Ocean City */
+  --bg_mid: #B1BCC8; /* Glacial Salt */
+  --bg_foam: #D9D9D8; /* Concerto */
+  --panel: #ffffff;
+  --text: #0b0d12;
+  --muted: rgba(11, 13, 18, 0.68);
+  --line: rgba(11, 13, 18, 0.10);
+  --line-strong: rgba(11, 13, 18, 0.16);
+  --link: #0b2bd6;
+  --link-hover: #081f9a;
+  --accent: #0b2bd6;
+  --main-bg: #ffffff;
+  --nav-height: 52px;
+  /* Keep this for image sizing/etc if needed */
+  --profile-width: 240px;
+  /* Actual fixed info-card width */
+  --info-card-width: 240px;
+  --content-gap: 64px;
+  --page-pad: 88px;
+  --card-top: 12px;
+  /* Main text block sizing */
+  --main-pad: 80px;
+  --text-max: 1180px;
+}
+
+html { scroll-behavior: smooth; height: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    url("/images/background.png") top center / 100% auto repeat-y scroll,
+    var(--bg);
+  color: var(--text);
+  font-family: "Forum", "Noto Serif HK", ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Slightly larger typography inside the main content card */
+.main-card .main-inner {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Forum for titles/headings */
+h1, h2, h3, .top-nav .brand {
+  font-family: "Forum", ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+/* Disable grain/overlay so all grays match exactly */
+body::before { display: none; }
+
+/* Very subtle grain to avoid banding on large gradients */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 4px 4px;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+}
+
+/* Hide Quarto chrome to match reference repo. */
+.quarto-title-banner,
+#title-block-header,
+.page-footer,
+footer.footer,
+.nav-footer {
+  display: none !important;
+}
+
+#quarto-content,
+#quarto-document-content,
+.page-columns,
+.page-row,
+.page-layout-article,
+.content,
+main,
+main.content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: transparent !important;
+}
+
+main.content { padding: 0 !important; }
+
+.site-shell {
+  min-height: 100vh;
+}
+
+/* Quarto sometimes centers page-full content; force full-bleed. */
+.site-shell.page-columns,
+.site-shell.page-full,
+.site-shell.page-columns.page-full {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Top navigation bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 var(--page-pad);
+  /* Prevent main content from showing through.
+     We render the *page background* inside a pseudo-element. */
+  background: transparent;
+  position: fixed;
+  isolation: isolate;
+  border-bottom: 0;
+  /* Make the bottom border span full viewport width even inside Quarto wrappers */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  box-sizing: border-box;
+}
+
+.top-nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  /* Paint the same background image (opaque) so only it is visible */
+  background-color: var(--bg);
+  background-image: url("/images/background.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top center;
+  background-position-y: calc(0px - var(--bg-scroll-y, 0px));
+}
+
+.top-nav .brand,
+.top-nav .nav-links a {
+  color: #ffffff;
+}
+
+.top-nav .nav-links a:hover {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+}
+
+.top-nav .brand {
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.top-nav .nav-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.top-nav .nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  border: 0;
+}
+
+.top-nav .nav-links a:hover {
+  border-color: transparent;
+}
+
+.top-nav .nav-links a:hover {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Space below fixed navbar handled in .content-shell.page-columns padding */
+
+/* Space below fixed navbar */
+.site-shell {
+  padding-top: 0;
+}
+
+/* Background gradient is on body */
+.content-shell { background: transparent; }
+
+/* Two floating cards on top of gradient */
+.content-shell {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - var(--nav-height));
+  padding-bottom: var(--card-top);
+}
+
+/* Quarto adds layout classes; force our own column layout. */
+.content-shell.page-columns,
+.content-shell.page-full,
+.content-shell.page-columns.page-full {
+  display: flex !important;
+  gap: var(--content-gap) !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  /* Leave room for fixed navbar + fixed profile card */
+  padding: calc(var(--nav-height) + var(--card-top)) var(--page-pad) 0 calc(var(--page-pad) + var(--info-card-width) + var(--content-gap)) !important;
+  box-sizing: border-box;
+}
+
+/* Ensure cards have a visible gap from the fixed navbar */
+.profile-card,
+.main-card {
+  margin-top: var(--card-top) !important;
+}
+
+.content-shell.page-columns > aside.profile-card {
+  order: 0 !important;
+}
+
+.content-shell.page-columns > main.main-card {
+  order: 1 !important;
+}
+
+/* Floating left info card (only as tall as its content) */
+.profile-card {
+  flex: 0 0 var(--info-card-width);
+  width: var(--info-card-width);
+  align-self: flex-start;
+  margin: 0;
+  position: fixed;
+  left: var(--page-pad);
+  top: calc(var(--nav-height) + var(--card-top));
+  max-height: calc(100vh - var(--nav-height) - (2 * var(--card-top)));
+  overflow: auto;
+  background: var(--panel);
+  border: 0;
+  border-radius: 0;
+  padding: 22px 28px 16px 28px;
+  box-sizing: border-box;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+/* Floating main content card (full height) */
+.main-card {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  background: var(--main-bg) !important;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  backdrop-filter: none;
+  min-height: calc(100vh - var(--nav-height) - 48px);
+  overflow: auto;
+  box-shadow: none;
+}
+
+.main-card .main-inner {
+  padding: 2rem var(--main-pad);
+  background: transparent;
+}
+
+/* Constrain text line length inside main column */
+.main-inner {
+  max-width: var(--text-max) !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.75);
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.profile-name {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0.35rem 0 0;
+  border: 0 !important;
+  color: #002FA7; /* match section headings */
+}
+
+.profile-sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.1rem 0 0.9rem;
+  /* Ensure Chinese renders with the intended CJK serif */
+  font-family: "Noto Serif HK", "Forum", ui-serif, Georgia, "Times New Roman", Times, serif;
+}
+
+/* Quarto may add anchored heading decorations—disable them for the name. */
+.profile-name.anchored::after,
+.profile-name .anchorjs-link {
+  display: none !important;
+}
+
+.profile-links {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.profile-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.profile-links a.no-click {
+  pointer-events: none;
+  cursor: default;
+}
+
+.profile-links a:hover {
+  color: var(--link-hover);
+}
+
+.profile-links i.bi {
+  width: 22px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #2d3e56;
+}
+
+/* Make headings match the clean style. */
+h2, h3 { font-family: "Crimson Text", serif; }
+h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #002FA7; /* Klein blue */
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  padding-bottom: 0 !important;
+}
+
+/* Add space between sections (space appears after previous section) */
+.main-inner h2 {
+  margin-top: 2rem;
+}
+.main-inner h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Light divider line after each section heading */
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(11, 13, 18, 0.10);
+  margin-top: 0.55rem;
+}
+
+.anchored .anchorjs-link { display: none !important; }
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Headings + body copy contrast like the inspiration */
+h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+p, li, .showcase-authors, .showcase-venue {
+  color: rgba(11, 13, 18, 0.92);
+}
+
+/* Make each paper/project title bold */
+.showcase-title {
+  font-weight: 700;
+}
+
+/* Space between papers/projects */
+.showcase-item {
+  margin: 0 0 1.15rem 0;
+  border-left: 2px solid rgba(11, 13, 18, 0.12);
+  padding-left: 0.9rem;
+}
+.showcase-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Education: degree like title, school like authors */
+.edu-item {
+  margin: 0 0 1.15rem 0;
+  border-left: 2px solid rgba(11, 13, 18, 0.12);
+  padding-left: 0.9rem;
+}
+.edu-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Space between education list and the following paragraph */
+.edu-list {
+  margin-bottom: 1.25rem;
+}
+.edu-degree {
+  font-weight: 700; /* like .showcase-title */
+}
+.edu-school {
+  font-style: italic; /* like .showcase-authors */
+}
+.edu-time,
+.edu-note {
+}
+
+.showcase-authors {
+  font-style: italic;
+}
+
+/* Paper/project links: comma-separated, colored, underline on hover */
+.showcase-links a {
+  color: #78A2D2;
+  text-decoration: none;
+}
+.showcase-links a:hover {
+  text-decoration: underline;
+}
+
+/* Put venue on same row as meta tags */
+.showcase-meta {
+  display: block;
+}
+
+.showcase-venue {
+  white-space: normal;
+  font-style: normal;
+}
+
+.showcase-venue em {
+  font-style: normal;
+}
+
+@media (max-width: 720px) {
+  .showcase-venue {
+    white-space: normal;
+  }
+}
+
+/* Research interest tag colors */
+.topic-mm { color: #FFBF65; font-weight: 700; }
+.topic-gen { color: #FD8973; font-weight: 700; }
+.topic-health { color: #56A5DD; font-weight: 700; }
+
+/* (legacy) profile-column styles removed; using .profile-card now */
+
+/* Make the icon/link list feel more “UI” */
+.profile-links a {
+  padding: 0.15rem 0;
+}
+
+.profile-links a:hover {
+  color: var(--accent);
+}
+
+.profile-links i.bi {
+  color: #2d3e56;
+}
+
+/* Keep your existing section anchors usable with the rail nav. */
+#about,
+#research-interests,
+#publications,
+#projects,
+#education {
+  scroll-margin-top: calc(var(--nav-height) + 14px);
+}
+
+@media (max-width: 980px) {
+  :root {
+    --profile-width: 280px;
+    --info-card-width: 300px;
+  }
+}
+
+@media (max-width: 720px) {
+  .content-shell {
+    display: block;
+  }
+  .profile-card {
+    position: static;
+    left: auto;
+    top: auto;
+    max-height: none;
+    margin: 16px 16px 0 16px;
+    padding-left: 28px;
+  }
+  .main-card {
+    margin: 16px;
+    min-height: auto;
+  }
+  .main-card .main-inner {
+    padding: 1.25rem 1.25rem;
+  }
+}
+
