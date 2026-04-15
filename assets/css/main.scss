@@ -64,11 +64,11 @@ body.home-clean-blue .masthead__inner-wrap {
 }
 
 body.home-clean-blue .page {
-  background: #ffffff;
-  border: 1px solid #d7e9fb;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.08);
-  padding: 0.9em 1.1em;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
 }
 
 body.home-clean-blue #main {
@@ -153,10 +153,11 @@ body.home-clean-blue .research-tags {
 
 body.home-clean-blue .topic-tag {
   border: 1px solid;
-  border-radius: 999px;
+  border-radius: 4px;
   font-size: 0.86rem;
   font-weight: 600;
   padding: 0.16rem 0.7rem;
+  box-shadow: none;
 }
 
 body.home-clean-blue .topic-mm {
@@ -217,10 +218,10 @@ body.home-clean-blue .showcase-item {
 
 body.home-clean-blue .showcase-badge {
   align-items: center;
-  background: #f4f8fe;
+  background: #eef4fb;
   border: 1px solid #dfe9f5;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(45, 90, 145, 0.06);
+  border-radius: 4px;
+  box-shadow: none;
   color: #3a678f;
   display: inline-flex;
   font-size: 0.86rem;
@@ -235,22 +236,22 @@ body.home-clean-blue .showcase-badge {
 }
 
 body.home-clean-blue .badge-conference {
-  background: linear-gradient(90deg, #e9f2ff 0%, #e1eeff 100%) !important;
+  background: #e7f0fd !important;
   color: #486d95 !important;
 }
 
 body.home-clean-blue .badge-workshop {
-  background: linear-gradient(90deg, #f1edff 0%, #eae5ff 100%) !important;
+  background: #eee9fb !important;
   color: #6b60a8 !important;
 }
 
 body.home-clean-blue .badge-arxiv {
-  background: linear-gradient(90deg, #f2f4f7 0%, #ebeff3 100%) !important;
+  background: #edf1f5 !important;
   color: #6f7b89 !important;
 }
 
 body.home-clean-blue .badge-project {
-  background: linear-gradient(90deg, #e4f4f8 0%, #dceff5 100%) !important;
+  background: #e5f2f5 !important;
   color: #3d7185 !important;
 }
 
@@ -283,7 +284,7 @@ body.home-clean-blue .showcase-tags {
 body.home-clean-blue .showcase-tags .meta-tag {
   background: #f4f7fb !important;
   border: 1px solid #e1e8f1 !important;
-  border-radius: 999px;
+  border-radius: 4px;
   color: #6a7888 !important;
   display: inline-block;
   font-size: 0.8rem;
@@ -347,7 +348,7 @@ body.home-clean-blue .showcase-btn {
   align-items: center;
   background: #ffffff;
   border: 1px solid #d2e2f2;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #3f678d;
   display: inline-flex;
   font-size: 0.82rem;
@@ -359,9 +360,9 @@ body.home-clean-blue .showcase-btn {
 }
 
 body.home-clean-blue .showcase-btn:hover {
-  background: #eaf4ff;
-  border-color: #5f9ad7;
-  color: #174e83;
+  background: #f3f8ff;
+  border-color: #9fc2e3;
+  color: #2f5f88;
 }
 
 body.home-clean-blue .edu-list {
@@ -373,7 +374,8 @@ body.home-clean-blue .edu-list {
 body.home-clean-blue .edu-item {
   background: #f7fbff;
   border: 1px solid #d6e8fb;
-  border-radius: 12px;
+  border-radius: 4px;
+  box-shadow: none;
   padding: 0.7rem 0.85rem;
 }
 
@@ -405,8 +407,9 @@ body.home-clean-blue .edu-note {
 
 body.home-clean-blue .ack-box {
   background: #f3f8ff;
-  border-left: 4px solid #89b8e8;
-  border-radius: 10px;
+  border: 1px solid #d6e8fa;
+  border-left: 3px solid #89b8e8;
+  border-radius: 4px;
   color: #24496b;
   margin: 0.85rem 0 0.2rem;
   padding: 0.7rem 0.9rem;
