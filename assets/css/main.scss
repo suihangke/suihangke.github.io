@@ -182,15 +182,15 @@ body.home-clean-blue .page__content hr {
 body.home-clean-blue {
   --showcase-space-xs: 0.14rem;
   --showcase-space-sm: 0.28rem;
-  --showcase-space-md: 0.48rem;
-  --showcase-space-lg: 0.9rem;
+  --showcase-space-md: 0.4rem;
+  --showcase-space-lg: 0.72rem;
 }
 
 body.home-clean-blue .showcase-item {
   align-items: flex-start;
   display: flex;
   gap: 0.9rem;
-  margin: var(--showcase-space-lg) 0 1.2rem;
+  margin: var(--showcase-space-lg) 0 0.95rem;
 }
 
 body.home-clean-blue .showcase-badge {
@@ -294,6 +294,11 @@ body.home-clean-blue .showcase-authors {
   font-size: 0.95rem;
   line-height: 1.4;
   margin: 0 0 var(--showcase-space-xs);
+  font-style: normal;
+}
+
+body.home-clean-blue .showcase-authors em {
+  font-style: normal;
 }
 
 body.home-clean-blue .showcase-venue {
@@ -311,19 +316,23 @@ body.home-clean-blue .showcase-submeta {
 
 body.home-clean-blue .showcase-links {
   display: flex;
-  gap: 0.55rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   margin-top: 0;
 }
 
 body.home-clean-blue .showcase-btn {
+  align-items: center;
   background: #ffffff;
-  border: 1px solid #8dbbe7;
+  border: 1px solid #d2e2f2;
   border-radius: 8px;
-  color: #1f5f96;
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 0.25rem 0.8rem;
+  color: #3f678d;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1;
+  min-height: 32px;
+  padding: 0.34rem 0.66rem;
   text-decoration: none;
 }
 

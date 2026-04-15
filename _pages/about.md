@@ -34,7 +34,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     <div class="showcase-tags">
       <span class="meta-tag">Multimodal Representation Learning</span>
     </div>
-    <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Yuqing Wang&#42;, Minh N. Do</em></div>
+    <div class="showcase-authors"><strong>Hangke Sui&#42;</strong>, Yuqing Wang&#42;, Minh N. Do</div>
     <div class="showcase-venue"><em>The Fourteenth International Conference on Learning Representations (ICLR 2026)</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=BjL4CSNJug">PDF</a>
@@ -51,7 +51,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     <div class="showcase-tags">
       <span class="meta-tag">Multimodal Representation Learning</span>
     </div>
-    <div class="showcase-authors"><em><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</em></div>
+    <div class="showcase-authors"><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</div>
     <div class="showcase-venue"><em>Accepted at GRaM Workshop @ ICLR 2026</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">PDF</a>
@@ -66,7 +66,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     <div class="showcase-tags">
       <span class="meta-tag">Generative Modeling</span>
     </div>
-    <div class="showcase-authors"><em>Yuxin Chen&#42;, Chumeng Liang&#42;, <strong>Hangke Sui</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</em></div>
+    <div class="showcase-authors">Yuxin Chen&#42;, Chumeng Liang&#42;, <strong>Hangke Sui</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</div>
     <div class="showcase-venue"><em>arXiv preprint, 2026</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">PDF</a>
@@ -89,12 +89,10 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
     </div>
     <div class="showcase-venue">ARPA-H Funded Project, 2024-present</div>
     <div class="showcase-authors">
-      <em>
-        Collaborated with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
-        Prof. <a href="https://kinglab.mechse.illinois.edu/">William P. King</a>,
-        Prof. <a href="https://bioengineering.illinois.edu/people/rxb">Rohit Bhargava</a>,
-        and Prof. <a href="https://mcb.illinois.edu/directory/profile/kumarp">Kannanganattu V. Prasanth</a>
-      </em>
+      Collaborated with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
+      Prof. <a href="https://kinglab.mechse.illinois.edu/">William P. King</a>,
+      Prof. <a href="https://bioengineering.illinois.edu/people/rxb">Rohit Bhargava</a>,
+      and Prof. <a href="https://mcb.illinois.edu/directory/profile/kumarp">Kannanganattu V. Prasanth</a>
     </div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://grainger.illinois.edu/news/stories/arpa-h-tumor-models">NEWS</a>
