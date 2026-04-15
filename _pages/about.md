@@ -52,7 +52,7 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
       <span class="meta-tag">Multimodal Representation Learning</span>
     </div>
     <div class="showcase-authors"><strong>Hangke Sui&#42;</strong>, Jiakai Chen&#42;</div>
-    <div class="showcase-venue"><em>Accepted at GRaM Workshop @ ICLR 2026</em></div>
+    <div class="showcase-venue"><em> Geometry-grounded Representation Learning and Generative Modeling Workshop @ ICLR 2026</em></div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">PDF</a>
     </div>
