@@ -17,6 +17,7 @@ pagetitle: "Hangke Sui"
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
+    <a href="#visitor-map">Visitors</a>
   </div>
 </nav>
 
@@ -26,6 +27,7 @@ pagetitle: "Hangke Sui"
   <a href="#publications">Publications</a>
   <a href="#projects">Projects</a>
   <a href="#education">Education</a>
+  <a href="#visitor-map">Visitors</a>
 </div>
 
 <script>
@@ -202,6 +204,10 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 
 <div class="ack-box">
   I am grateful to Prof. <a href="https://scholar.google.com/citations?user=NleHkdYAAAAJ&hl=en">Xiaoming Yuan</a> and Prof. <a href="https://yulequan.github.io/">Lequan YU</a> for introducing me to research and providing guidance during my undergraduate studies. I also had the privilege of being advised by Prof. <a href="https://cs.uwaterloo.ca/~jwlwan/">Justin Wan</a> at the David R. Cheriton School of Computer Science, University of Waterloo. I am sincerely thankful to all the exceptional professors and mentors I have met along the way, who have profoundly shaped my understanding of mathematics, statistics, and computer science.
+</div>
+
+<div class="visitor-map-frame" id="visitor-map">
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=8fbde6&w=300&t=n&d=ugvqy_w9w1umgCZT00NCMtJwl-Nv0Qb6iBh3N9zf0rI&co=ffffff&cmo=6da7e8&cmn=4cb3d4&ct=5d7894"></script>
 </div>
 
 

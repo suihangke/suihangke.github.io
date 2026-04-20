@@ -567,8 +567,25 @@ p, li, .showcase-authors, .showcase-venue {
 #research-interests,
 #publications,
 #projects,
-#education {
+#education,
+#visitor-map {
   scroll-margin-top: calc(var(--nav-height) + 14px);
+}
+
+/* Visitor map (ClustrMaps) */
+.visitor-map-frame {
+  margin: 0.25rem 0 0 0;
+  padding: 0.75rem 0 0 0;
+  border-top: 1px solid var(--line);
+  position: relative;
+  z-index: 1;
+  min-height: 120px;
+}
+
+.visitor-map-frame img,
+.visitor-map-frame canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 980px) {
