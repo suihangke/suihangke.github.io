@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300;400;500&display=swap");
 
 :root {
@@ -543,10 +544,10 @@ p, li, .showcase-authors, .showcase-venue {
 }
 
 /* Research interest tag colors */
-.topic-mm { color: #FFBF65; font-weight: 700; }
-.topic-gen { color: #FD8973; font-weight: 700; }
-.topic-health { color: #56A5DD; font-weight: 700; }
-.topic-robot { color: #6BBF8A; font-weight: 700; }
+.topic-mm { color: #6b4fae; font-weight: 600; }
+.topic-gen { color: #c0462f; font-weight: 600; }
+.topic-health { color: #2b67b0; font-weight: 600; }
+.topic-robot { color: #1d7a6b; font-weight: 600; }
 
 /* (legacy) profile-column styles removed; using .profile-card now */
 
@@ -711,27 +712,243 @@ p, li, .showcase-authors, .showcase-venue {
   }
 }
 
-
-.venue-oral {
-  color: #c62828;
-  font-weight: 700;
+/* ===== Editorial style: paper panels, hairlines, typographic hierarchy ===== */
+:root {
+  --body-font: "Newsreader", "Noto Serif HK", Georgia, serif;
+  --display-font: "Forum", "Newsreader", Georgia, serif;
+  --paper: #fcfcfa;
+  --ink: #1a2032;
+  --ink-soft: #363d4f;
+  --ink-muted: #6b7182;
+  --hairline: rgba(26, 32, 50, 0.12);
+  --accent: #2a4d88;
+  --link: #2a4d88;
+  --link-hover: #142c57;
+  --oral: #b0261c;
 }
 
-.showcase-also {
-  color: #6b7280;
-  font-size: 0.92em;
+body,
+.main-card .main-inner,
+p, li,
+.showcase-title, .showcase-authors, .showcase-venue,
+.edu-degree, .edu-school, .edu-time, .edu-note,
+.ack-box,
+.profile-links a {
+  font-family: var(--body-font);
+}
+body {
+  color: var(--ink);
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+.main-card .main-inner {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+p, li { color: var(--ink-soft); }
+strong { font-weight: 600; color: var(--ink); }
+
+/* Display face (Forum) for the name and section headings */
+.top-nav .brand,
+.profile-name,
+.main-inner h2 {
+  font-family: var(--display-font);
+  font-weight: 400;
+}
+.profile-name {
+  font-size: 1.75rem;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.profile-sub {
+  font-family: "Noto Serif HK", serif;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+.main-inner h2 {
+  font-size: 1.8rem;
+  line-height: 1.15;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+}
+.main-inner h2::after {
+  height: 1px;
+  background: var(--hairline);
+  margin-top: 0.65rem;
 }
 
+/* Panels: clean paper, softly lifted off the ocean */
+.profile-card,
+.main-card {
+  background: var(--paper) !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow:
+    0 1px 2px rgba(12, 24, 48, 0.12),
+    0 28px 60px -30px rgba(12, 24, 48, 0.6) !important;
+}
+.profile-avatar {
+  box-shadow:
+    0 0 0 5px var(--paper),
+    0 0 0 6px rgba(26, 32, 50, 0.16),
+    0 18px 34px -18px rgba(12, 24, 48, 0.6);
+}
+.profile-links a {
+  color: var(--ink-soft);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.profile-links a:hover { color: var(--accent); text-decoration: none; }
+.profile-links i.bi { color: var(--accent); }
+
+/* In-text links: quiet ink-blue with a fine underline */
+.main-inner a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(42, 77, 136, 0.3);
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+.main-inner a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+
+/* Publications, projects, education: an open list divided by hairlines */
 .pub-note {
-  color: #6b7280;
-  font-size: 0.88em;
+  color: var(--ink-muted);
+  font-size: 0.92rem;
   font-style: italic;
-  margin: -0.4rem 0 0.8rem;
+  margin: -0.2rem 0 0.2rem;
+}
+.showcase-item,
+.edu-item {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 1.2rem 0;
+  margin: 0;
+}
+.showcase-item + .showcase-item,
+.edu-item + .edu-item {
+  border-top: 1px solid var(--hairline);
+}
+.main-inner h2 + .showcase-item,
+.pub-note + .showcase-item,
+.edu-list > .edu-item:first-child {
+  padding-top: 0.35rem;
+}
+.main-inner p strong { font-weight: 560; }
+.showcase-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+/* Authors: everyone in full ink; co-first authors underlined, self in bold */
+.showcase-authors {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.showcase-authors strong { color: var(--ink); font-weight: 700; }
+.cofirst {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: currentColor;
+}
+.showcase-meta {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.showcase-venue { color: var(--ink-soft); font-style: normal; }
+.showcase-venue strong { color: var(--accent); font-weight: 600; }
+.showcase-also {
+  margin-top: 0.1rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+.venue-oral {
+  color: var(--oral);
+  font-style: normal;
+  font-weight: 600;
+}
+.equal-note {
+  color: var(--ink-muted);
+  font-size: 0.9em;
+  font-style: italic;
+  white-space: nowrap;
 }
 
-.equal-note {
-  color: #6b7280;
-  font-size: 0.9em;
-  font-style: normal;
+/* Paper links as small tracked capitals (the commas in the markup are hidden) */
+.showcase-links {
+  font-size: 0;
+  margin-top: 0.65rem;
+}
+.showcase-links a {
+  display: inline-block;
+  margin-right: 1.4rem;
+  padding-bottom: 1px;
+  font-family: var(--body-font);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(42, 77, 136, 0.28);
+  transition: color 150ms ease, border-color 150ms ease;
+}
+.showcase-links a:last-child { margin-right: 0; }
+.showcase-links a:hover {
+  color: var(--link-hover);
+  border-bottom-color: currentColor;
+  text-decoration: none;
+}
+
+/* Education: dates set flush right, like a CV */
+.edu-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1.5rem;
+  align-items: baseline;
+}
+.edu-degree { grid-column: 1; grid-row: 1; font-weight: 600; color: var(--ink); }
+.edu-school { grid-column: 1; font-style: italic; color: var(--ink-soft); }
+.edu-note { grid-column: 1; color: var(--ink-muted); font-size: 0.95rem; }
+.edu-time {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
   white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+@media (max-width: 560px) {
+  .edu-item { display: block; }
+}
+
+.ack-box {
+  margin-top: 2.25rem;
+  padding: 1.25rem 0 0;
+  border-left: 0;
+  border-top: 1px solid var(--hairline);
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+.ack-box a { font-style: normal; }
+
+@media (max-width: 1024px) {
+  .main-card .main-inner { padding: 1.75rem 1.4rem; }
 }
