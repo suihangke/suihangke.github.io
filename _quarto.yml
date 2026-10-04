@@ -4,6 +4,7 @@ project:
   resources:
     - images
     - files
+    - google807f3db86a556287.html
 
 website:
   title: "Hangke Sui"

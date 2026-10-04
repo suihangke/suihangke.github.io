@@ -569,25 +569,8 @@ p, li, .showcase-authors, .showcase-venue {
 #research-interests,
 #publications,
 #projects,
-#education,
-#visitor-map {
+#education {
   scroll-margin-top: calc(var(--nav-height) + 14px);
-}
-
-/* Visitor map (ClustrMaps) */
-.visitor-map-frame {
-  margin: 0.25rem 0 0 0;
-  padding: 0.75rem 0 0 0;
-  border-top: 1px solid var(--line);
-  position: relative;
-  z-index: 1;
-  min-height: 120px;
-}
-
-.visitor-map-frame img,
-.visitor-map-frame canvas {
-  max-width: 100%;
-  height: auto;
 }
 
 @media (max-width: 980px) {
@@ -895,7 +878,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .showcase-links a {
   display: inline-block;
-  margin-right: 1.4rem;
+  margin: 0 1.4rem 0.35rem 0;
   padding-bottom: 1px;
   font-family: var(--body-font);
   font-size: 0.74rem;
@@ -903,14 +886,14 @@ strong { font-weight: 600; color: var(--ink); }
   letter-spacing: 0.14em;
   line-height: 1.5;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #78a2d2;
   text-decoration: none;
-  border-bottom: 1px solid rgba(42, 77, 136, 0.28);
+  border-bottom: 1px solid rgba(120, 162, 210, 0.45);
   transition: color 150ms ease, border-color 150ms ease;
 }
 .showcase-links a:last-child { margin-right: 0; }
 .showcase-links a:hover {
-  color: var(--link-hover);
+  color: #4a7bb7;
   border-bottom-color: currentColor;
   text-decoration: none;
 }
@@ -951,4 +934,26 @@ strong { font-weight: 600; color: var(--ink); }
 
 @media (max-width: 1024px) {
   .main-card .main-inner { padding: 1.75rem 1.4rem; }
+}
+
+/* Mobile: the five profile links on one compact row */
+@media (max-width: 1024px) {
+  .profile-links {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 4px;
+    row-gap: 0;
+    margin-top: 0.5rem;
+  }
+  .profile-links a {
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .profile-links i.bi { font-size: 1.05rem; }
+}
+@media (max-width: 560px) {
+  .showcase-links a { margin-right: 0.95rem; letter-spacing: 0.1em; }
+  .profile-links a { font-size: 0.7rem; }
+  .profile-links .label-long { display: none; }
 }
