@@ -546,6 +546,7 @@ p, li, .showcase-authors, .showcase-venue {
 .topic-mm { color: #FFBF65; font-weight: 700; }
 .topic-gen { color: #FD8973; font-weight: 700; }
 .topic-health { color: #56A5DD; font-weight: 700; }
+.topic-robot { color: #6BBF8A; font-weight: 700; }
 
 /* (legacy) profile-column styles removed; using .profile-card now */
 
@@ -710,3 +711,27 @@ p, li, .showcase-authors, .showcase-venue {
   }
 }
 
+
+.venue-oral {
+  color: #c62828;
+  font-weight: 700;
+}
+
+.showcase-also {
+  color: #6b7280;
+  font-size: 0.92em;
+}
+
+.pub-note {
+  color: #6b7280;
+  font-size: 0.88em;
+  font-style: italic;
+  margin: -0.4rem 0 0.8rem;
+}
+
+.equal-note {
+  color: #6b7280;
+  font-size: 0.9em;
+  font-style: normal;
+  white-space: nowrap;
+}

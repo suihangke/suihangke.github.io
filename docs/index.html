@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,6 +182,7 @@ Hangke Sui
     <ul class="profile-links">
       <li><a class="no-click" href="#" aria-disabled="true"><i class="bi bi-geo-alt"></i><span>Illinois, US</span></a></li>
       <li><a href="mailto:hangkes2@illinois.edu"><i class="bi bi-envelope"></i><span>Email</span></a></li>
+      <li><a href="https://scholar.google.com/citations?user=pjd0Ic4AAAAJ&amp;hl=en"><i class="bi bi-mortarboard"></i><span>Google Scholar</span></a></li>
       <li><a href="https://github.com/suihangke"><i class="bi bi-github"></i><span>GitHub</span></a></li>
       <li><a href="https://orcid.org/0009-0006-3946-7267"><i class="bi bi-person-badge"></i><span>ORCID</span></a></li>
       <li><a href="https://www.linkedin.com/in/hangke-sui"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a></li>
@@ -195,7 +199,7 @@ About Me
 Research Interests
 </h2>
 <p>
-My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>.
+My research lies at the intersection of <span class="topic-tag topic-mm">Multimodal Representation Learning</span>, <span class="topic-tag topic-gen">Generative Modeling</span>, <span class="topic-tag topic-robot">Robotics</span>, and <span class="topic-tag topic-health">AI for Healthcare and Biomedicine</span>.
 </p>
 <p>
 I am interested in developing <strong>theoretically grounded and scalable learning frameworks</strong> for multimodal intelligence. In particular, I study <strong>multimodal representation learning</strong> through novel perspectives and principled objectives for both cross-modal and within-modal understanding, and <strong>generative modeling</strong> with an emphasis on <strong>efficient and controllable generation</strong>.
@@ -206,16 +210,38 @@ More broadly, I am interested in <strong>unified learning paradigms</strong> tha
 <h2 id="publications" class="anchored">
 Publications
 </h2>
+<p class="pub-note">* denotes equal contribution</p>
+
+<div class="showcase-item">
+  <div class="showcase-content">
+    <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
+    <div class="showcase-authors">Yuxin Chen*, Chumeng Liang*, <strong>Hangke Sui*</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu <span class="equal-note">(* equal contribution)</span></div>
+    <div class="showcase-meta">
+      <span class="showcase-venue"><strong>NeurIPS 2026</strong></span>
+    </div>
+    <div class="showcase-meta showcase-also">
+      Also at ICML 2026 Workshop on Foundations of Deep Generative Models <strong class="venue-oral">(Oral)</strong>
+    </div>
+    <div class="showcase-links">
+      <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">PDF</a>, 
+      <a class="showcase-btn" href="https://github.com/nealchen2003/LangFlow">Code</a>, 
+      <a class="showcase-btn" href="https://huggingface.co/Continuous-Rivals-Discrete">HuggingFace</a>, 
+      <a class="showcase-btn" href="https://caradryanl.github.io/blog/2026/langflow/">Blog</a>
+    </div>
+  </div>
+</div>
+
 <div class="showcase-item">
   <div class="showcase-content">
     <div class="showcase-title">UniCon: Unified Framework for Contrastive Multimodal Alignment</div>
     <div class="showcase-authors"><strong>Hangke Sui*</strong>, Yuqing Wang*, Minh N. Do</div>
     <div class="showcase-meta">
-      <span class="showcase-venue"><em>ICLR 2026</em></span>, <span class="meta-tag topic-mm">Multimodal Representation Learning</span>
+      <span class="showcase-venue"><strong>ICLR 2026</strong></span>
     </div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=BjL4CSNJug">PDF</a>, 
-      <a class="showcase-btn" href="https://github.com/suihangke/UniCon">Code (coming soon)</a>, 
+      <a class="showcase-btn" href="https://suihangke.github.io/UniCon/">Project Page</a>, 
+      <a class="showcase-btn" href="https://github.com/suihangke/UniCon">Code</a>, 
       <a class="showcase-btn" href="./files/slides_UniCon.pdf">Slides</a>
     </div>
   </div>
@@ -226,26 +252,10 @@ Publications
     <div class="showcase-title">Mixed-Curvature Product Space Multimodal Contrastive Alignment</div>
     <div class="showcase-authors"><strong>Hangke Sui*</strong>, Jiakai Chen*</div>
     <div class="showcase-meta">
-      <span class="showcase-venue"><em> GRaM Workshop @ ICLR 2026</em></span>, <span class="meta-tag topic-mm">Multimodal Representation Learning</span>
+      <span class="showcase-venue"><em> GRaM Workshop @ ICLR 2026</em></span>
     </div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">PDF</a>
-    </div>
-  </div>
-</div>
-
-<div class="showcase-item">
-  <div class="showcase-content">
-    <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
-    <div class="showcase-authors">Yuxin Chen*, Chumeng Liang*, <strong>Hangke Sui*</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</div>
-    <div class="showcase-meta">
-      <span class="showcase-venue"><em>arXiv preprint, 2026</em></span>, <span class="meta-tag topic-gen">Generative Modeling</span>
-    </div>
-    <div class="showcase-links">
-      <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">PDF</a>, 
-      <a class="showcase-btn" href="https://github.com/nealchen2003/LangFlow">Code</a>, 
-      <a class="showcase-btn" href="https://huggingface.co/Continuous-Rivals-Discrete">HuggingFace</a>, 
-      <a class="showcase-btn" href="https://caradryanl.github.io/blog/2026/langflow/">Blog</a>
     </div>
   </div>
 </div>
@@ -262,7 +272,7 @@ Selected Projects
       and Prof. <a href="https://mcb.illinois.edu/directory/profile/kumarp">Kannanganattu V. Prasanth</a>
     </div>
     <div class="showcase-meta">
-      <span class="showcase-venue">ARPA-H Funded Project, 2024-present</span>, <span class="meta-tag topic-health">AI for Healthcare and Biomedicine</span>
+      <span class="showcase-venue">ARPA-H Funded Project, 2024-present</span>
     </div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://grainger.illinois.edu/news/stories/arpa-h-tumor-models">News</a>
