@@ -544,10 +544,10 @@ p, li, .showcase-authors, .showcase-venue {
 }
 
 /* Research interest tag colors */
-.topic-mm { color: #6b4fae; font-weight: 600; }
-.topic-gen { color: #c0462f; font-weight: 600; }
-.topic-health { color: #2b67b0; font-weight: 600; }
-.topic-robot { color: #1d7a6b; font-weight: 600; }
+.topic-mm { color: var(--topic-mm); font-weight: 600; }
+.topic-gen { color: var(--topic-gen); font-weight: 600; }
+.topic-health { color: var(--topic-health); font-weight: 600; }
+.topic-robot { color: var(--topic-robot); font-weight: 600; }
 
 /* (legacy) profile-column styles removed; using .profile-card now */
 
@@ -707,7 +707,12 @@ p, li, .showcase-authors, .showcase-venue {
   --accent: #2a4d88;
   --link: #2a4d88;
   --link-hover: #142c57;
-  --oral: #b0261c;
+  --oral: #a3201f;
+  /* One accent family: all research topics share the ink-navy accent */
+  --topic-mm: var(--accent);
+  --topic-gen: var(--accent);
+  --topic-robot: var(--accent);
+  --topic-health: var(--accent);
 }
 
 body,
