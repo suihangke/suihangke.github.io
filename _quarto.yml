@@ -12,7 +12,7 @@ website:
   title: "Hangke Sui"
   site-url: https://suihangke.github.io/
   favicon: favicon.png
-  description: "Personal academic website of Hangke Sui, ECE PhD student at UIUC, focusing on AI, machine learning, and healthcare."
+  description: "Hangke Sui — PhD candidate in ECE at UIUC working on multimodal representation learning, generative modeling, robotics, and AI for healthcare."
   navbar: false
 
 format:
@@ -24,3 +24,16 @@ format:
     include-in-header:
       text: |
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <meta name="description" content="Hangke Sui — PhD candidate in ECE at UIUC working on multimodal representation learning, generative modeling, robotics, and AI for healthcare.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://suihangke.github.io/">
+        <meta property="og:title" content="Hangke Sui">
+        <meta property="og:description" content="Hangke Sui — PhD candidate in ECE at UIUC working on multimodal representation learning, generative modeling, robotics, and AI for healthcare.">
+        <meta property="og:image" content="https://suihangke.github.io/images/share-card.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Hangke Sui, PhD candidate in ECE at the University of Illinois Urbana-Champaign">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Hangke Sui">
+        <meta name="twitter:description" content="Hangke Sui — PhD candidate in ECE at UIUC working on multimodal representation learning, generative modeling, robotics, and AI for healthcare.">
+        <meta name="twitter:image" content="https://suihangke.github.io/images/share-card.jpg">
