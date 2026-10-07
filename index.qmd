@@ -16,6 +16,7 @@ pagetitle: "Hangke Sui"
     <a href="#research-interests">Research</a>
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
     <a href="#education">Education</a>
   </div>
 </nav>
@@ -25,6 +26,7 @@ pagetitle: "Hangke Sui"
   <a href="#research-interests">Research</a>
   <a href="#publications">Publications</a>
   <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
   <a href="#education">Education</a>
 </div>
 
@@ -179,6 +181,18 @@ More broadly, I view representation and generation as complementary facets of in
     <div class="showcase-links">
       <a class="showcase-btn" href="https://grainger.illinois.edu/news/stories/arpa-h-tumor-models">News</a>
     </div>
+  </div>
+</div>
+```
+
+<h2 id="experience">Experience</h2>
+
+```{=html}
+<div class="edu-list">
+  <div class="edu-item">
+    <div class="edu-degree">Apple</div>
+    <div class="edu-school">Research Intern</div>
+    <div class="edu-time">Summer 2026</div>
   </div>
 </div>
 ```

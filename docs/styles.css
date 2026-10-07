@@ -569,6 +569,7 @@ p, li, .showcase-authors, .showcase-venue {
 #research-interests,
 #publications,
 #projects,
+#experience,
 #education {
   scroll-margin-top: calc(var(--nav-height) + 14px);
 }
@@ -891,14 +892,14 @@ strong { font-weight: 600; color: var(--ink); }
   letter-spacing: 0.14em;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #78a2d2;
+  color: #4676b1;
   text-decoration: none;
-  border-bottom: 1px solid rgba(120, 162, 210, 0.45);
+  border-bottom: 1px solid rgba(70, 118, 177, 0.4);
   transition: color 150ms ease, border-color 150ms ease;
 }
 .showcase-links a:last-child { margin-right: 0; }
 .showcase-links a:hover {
-  color: #4a7bb7;
+  color: var(--accent);
   border-bottom-color: currentColor;
   text-decoration: none;
 }

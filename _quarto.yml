@@ -5,10 +5,13 @@ project:
     - images
     - files
     - google807f3db86a556287.html
+    - favicon.png
+    - apple-touch-icon.png
 
 website:
   title: "Hangke Sui"
   site-url: https://suihangke.github.io/
+  favicon: favicon.png
   description: "Personal academic website of Hangke Sui, ECE PhD student at UIUC, focusing on AI, machine learning, and healthcare."
   navbar: false
 
@@ -18,3 +21,6 @@ format:
     css: styles.css
     toc: false
     smooth-scroll: true
+    include-in-header:
+      text: |
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
