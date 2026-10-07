@@ -123,7 +123,6 @@ More broadly, I view representation and generation as complementary facets of in
     <div class="showcase-meta showcase-also">
       Also at ICML 2026 Workshop on Foundations of Deep Generative Models <strong class="venue-oral">(Oral)</strong>
     </div>
-    <div class="showcase-tldr">The first continuous diffusion language model shown to rival discrete diffusion in both generative quality and perplexity.</div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://arxiv.org/pdf/2604.11748">PDF</a>, 
       <a class="showcase-btn" href="https://github.com/nealchen2003/LangFlow">Code</a>, 
@@ -140,7 +139,6 @@ More broadly, I view representation and generation as complementary facets of in
     <div class="showcase-meta">
       <span class="showcase-venue"><strong>ICLR 2026</strong></span>
     </div>
-    <div class="showcase-tldr">A kernel view of contrastive alignment that yields closed-form global solutions, replacing slow minibatch back-propagation with exact updates.</div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://arxiv.org/pdf/2604.16678">PDF</a>, 
       <a class="showcase-btn" href="https://suihangke.github.io/UniCon/">Project Page</a>, 
@@ -157,7 +155,6 @@ More broadly, I view representation and generation as complementary facets of in
     <div class="showcase-meta">
       <span class="showcase-venue"><em> GRaM Workshop @ ICLR 2026</em></span>
     </div>
-    <div class="showcase-tldr">Contrastive multimodal alignment in a mixed-curvature product space that combines Euclidean, hyperbolic, and spherical geometry.</div>
     <div class="showcase-links">
       <a class="showcase-btn" href="https://openreview.net/pdf?id=Sp3BrGpo5w">PDF</a>
     </div>
