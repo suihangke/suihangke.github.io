@@ -1082,3 +1082,33 @@ strong { font-weight: 600; color: var(--ink); }
 .media-cover .cover-worlds { background: linear-gradient(100deg, #89ded5, #c2adff); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .media-cover .cover-subtitle { font-size: clamp(0.5rem, 3.45cqw, 0.8rem); line-height: 1.2; text-wrap: balance; }
 .media-cover:hover .cover-title { opacity: 0; }
+
+/* Small, single-color institution marks beside Experience / Education entries.
+   Official files: Illinois limited-use single-color Block I, UCLA single-color wordmark; HKU has no single-color
+   shield, so its crest is shown small in color. Apple uses the Bootstrap Icons glyph in ink. */
+.edu-item.has-logo {
+  grid-template-columns: 46px minmax(0, 1fr) auto;
+}
+.edu-item.has-logo .edu-logo {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 40px;
+  margin-top: 0.1rem;
+}
+.edu-logo img { max-width: 46px; max-height: 34px; width: auto; height: auto; display: block; }
+.edu-logo .bi { font-size: 30px; line-height: 1; color: var(--ink); }
+.edu-item.has-logo .edu-degree,
+.edu-item.has-logo .edu-school,
+.edu-item.has-logo .edu-note { grid-column: 2; }
+.edu-item.has-logo .edu-time { grid-column: 3; grid-row: 1; }
+@media (max-width: 560px) {
+  /* phones: keep the mark at the left, stack degree / school / dates in one column beside it */
+  .edu-item.has-logo { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 0.85rem; }
+  .edu-item.has-logo .edu-logo { width: 40px; grid-row: 1 / span 4; }
+  .edu-item.has-logo .edu-time { grid-column: 2; grid-row: auto; }
+}
