@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
 
 :root {
   /* Inspired by https://daveholloway.uk/ (bold, high-contrast, modern) */
@@ -722,7 +723,7 @@ p, li, .showcase-authors, .showcase-venue {
   --accent: #2a4d88;
   --link: #2a4d88;
   --link-hover: #142c57;
-  --oral: #a3201f;
+  --oral: #b2384f;   /* rose-crimson: reads as red, but sits with the navy/violet palette */
   /* One accent family: all research topics share the ink-navy accent */
   --topic-mm: var(--accent);
   --topic-gen: var(--accent);
@@ -875,14 +876,18 @@ strong { font-weight: 600; color: var(--ink); }
 .showcase-venue strong { color: var(--accent); font-weight: 600; }
 .showcase-also {
   margin-top: 0.1rem;
-  color: var(--ink-muted);
+  color: var(--ink-soft);
   font-size: 0.95rem;
-  font-style: italic;
+  font-style: normal;
 }
 .venue-oral {
   color: var(--oral);
   font-style: normal;
   font-weight: 600;
+}
+.venue-sep {
+  margin: 0 0.45em;
+  color: var(--ink-muted);
 }
 .equal-note {
   color: var(--ink-muted);
@@ -1036,3 +1041,44 @@ strong { font-weight: 600; color: var(--ink); }
   color: var(--accent);
   background: rgba(42, 77, 136, 0.08);
 }
+
+/* Publication teaser figure/animation beside each paper (stacks above the text on phones) */
+.showcase-item.has-media {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: start;
+}
+.showcase-media {
+  display: block;
+  margin-top: 0.2rem;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid var(--hairline) !important;
+}
+.showcase-media img,
+.showcase-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 640px) {
+  .showcase-item.has-media { grid-template-columns: 1fr; row-gap: 0.6rem; }
+  .showcase-media { max-width: 420px; }
+}
+/* Video teaser with a title overlay (Real2Worlds2Real cover); the title fades on hover to show the clip */
+.showcase-media.media-cover { position: relative; container-type: inline-size; }
+.media-cover .cover-title {
+  position: absolute; inset: 44% 0 auto; transform: translateY(-50%);
+  display: grid; gap: 0.2rem; padding: 0.45rem 0.4rem;
+  background: linear-gradient(transparent, rgba(12, 15, 21, 0.78) 28%, rgba(12, 15, 21, 0.78) 72%, transparent);
+  color: #f0f5f8; text-align: center; font-family: "DM Sans", system-ui, sans-serif;
+  transition: opacity 250ms ease; pointer-events: none;
+}
+.media-cover .cover-wordmark { font-size: 10.4cqw; font-weight: 700; line-height: 1.02; letter-spacing: -0.06em; white-space: nowrap; }
+.media-cover .cover-num { color: #b0bbc3; font-weight: 400; }
+.media-cover .cover-worlds { background: linear-gradient(100deg, #89ded5, #c2adff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.media-cover .cover-subtitle { font-size: clamp(0.5rem, 3.45cqw, 0.8rem); line-height: 1.2; text-wrap: balance; }
+.media-cover:hover .cover-title { opacity: 0; }
