@@ -76,15 +76,28 @@ h1, h2, h3, .top-nav .brand {
 }
 
 /* Full-page background layer stretched to DOCUMENT height */
+/* Background is pinned to the viewport and keeps the photo's aspect ratio (cover).
+   The navbar paints the identical layer (same size/position), so it matches seamlessly
+   without any scroll-sync JS. A soft paper veil lowers contrast so content leads. */
+:root {
+  --bg-layers:
+    linear-gradient(rgba(246, 247, 250, 0.22), rgba(246, 247, 250, 0.22)),
+    url("/images/background.webp") center top / cover no-repeat,
+    var(--bg);
+  --bg-filter: saturate(0.82);
+}
 body::before {
   content: "";
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100lvh; /* stable on mobile when the URL bar collapses */
   z-index: -2;
   pointer-events: none;
-  background:
-    url("/images/background.png") center top / 100% var(--bg-doc-h, 100%) no-repeat,
-    var(--bg);
+  background: var(--bg-layers);
+  filter: var(--bg-filter);
 }
 
 /* Very subtle grain to avoid banding on large gradients */
@@ -164,20 +177,20 @@ main.content { padding: 0 !important; }
   box-sizing: border-box;
 }
 
+.top-nav { overflow: hidden; }
 .top-nav::before {
   content: "";
   position: absolute;
-  /* Extend 1-2px below to avoid seam line */
-  inset: 0 0 -2px 0;
+  /* Same box as body::before (navbar is fixed at top:0, full width), clipped by the navbar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100lvh;
   z-index: -1;
   pointer-events: none;
-  /* Paint the same background image (opaque) so only it is visible */
-  background-color: var(--bg);
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: 100% var(--bg-doc-h, 100%);
-  /* Scroll-sync so the navbar "sees" the moving background */
-  background-position: center calc(0px - var(--bg-scroll-y, 0px));
+  background: var(--bg-layers);
+  filter: var(--bg-filter);
 }
 
 .top-nav .brand,
@@ -1004,4 +1017,22 @@ strong { font-weight: 600; color: var(--ink); }
   font-style: italic;
   font-size: 0.98rem;
   line-height: 1.55;
+}
+
+/* Publication topic tags: soft pills above each title, normal case for readability */
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.3rem;
+}
+.pub-tag {
+  font-family: var(--body-font);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  color: var(--accent);
+  background: rgba(42, 77, 136, 0.08);
 }

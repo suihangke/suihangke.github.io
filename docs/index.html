@@ -150,16 +150,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script>
   (function () {
-    const root = document.documentElement;
-    const update = () => {
-      root.style.setProperty("--bg-scroll-y", window.scrollY + "px");
-      // For aligning the stretched background across fixed elements
-      root.style.setProperty("--bg-doc-h", document.body.scrollHeight + "px");
-    };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update, { passive: true });
-
     const nav = document.querySelector(".top-nav");
     const toggle = document.querySelector(".top-nav .nav-toggle");
     const menu = document.querySelector(".mobile-nav-links");
@@ -228,8 +218,23 @@ Publications
 
 <div class="showcase-item">
   <div class="showcase-content">
+    <div class="pub-tags"><span class="pub-tag">Multimodal Representation</span><span class="pub-tag">Generative Modeling</span></div>
+    <div class="showcase-title">CoRe: Jointly Learning Contextual Representations for Understanding and Generation</div>
+    <div class="showcase-authors"><strong>Hangke Sui</strong>, Chang Li, Yuyan Li, Mohammad Haris Baig, Daniel Ulbricht</div>
+    <div class="showcase-meta">
+      <span class="showcase-venue"><em>arXiv preprint, 2026</em></span>
+    </div>
+    <div class="showcase-links">
+      <a class="showcase-btn" href="https://arxiv.org/pdf/2611.31397">PDF</a>
+    </div>
+  </div>
+</div>
+
+<div class="showcase-item">
+  <div class="showcase-content">
+    <div class="pub-tags"><span class="pub-tag">Diffusion Language Model</span></div>
     <div class="showcase-title">LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling</div>
-    <div class="showcase-authors"><span class="cofirst">Yuxin Chen</span>*, <span class="cofirst">Chumeng Liang</span>*, <strong><span class="cofirst">Hangke Sui</span>*</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu <span class="equal-note">(* equal contribution)</span></div>
+    <div class="showcase-authors"><span class="cofirst">Yuxin Chen</span>*, <span class="cofirst">Chumeng Liang</span>*, <strong><span class="cofirst">Hangke Sui</span>*</strong>, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu</div>
     <div class="showcase-meta">
       <span class="showcase-venue"><strong>NeurIPS 2026</strong></span>
     </div>
@@ -247,6 +252,21 @@ Publications
 
 <div class="showcase-item">
   <div class="showcase-content">
+    <div class="pub-tags"><span class="pub-tag">Agentic Robotics</span></div>
+    <div class="showcase-title">Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation</div>
+    <div class="showcase-authors"><span class="cofirst">Jinzhong Gu</span>*, <span class="cofirst">Jiakai Chen</span>*, <span class="cofirst">Xinyi Cao</span>*, <span class="cofirst">Yan Shen</span>*, <strong><span class="cofirst">Hangke Sui</span>*</strong>, Shutian Zheng, Xiang Xiao, Haoran Lu, Fan Xu, Lu Shi, Daochen Shi, Ruihua Zhang, Wei Zhan, Masayoshi Tomizuka, Ruihai Wu</div>
+    <div class="showcase-meta">
+      <span class="showcase-venue"><em>arXiv preprint, 2026</em></span>
+    </div>
+    <div class="showcase-links">
+      <a class="showcase-btn" href="https://arxiv.org/pdf/2611.31098">PDF</a>
+    </div>
+  </div>
+</div>
+
+<div class="showcase-item">
+  <div class="showcase-content">
+    <div class="pub-tags"><span class="pub-tag">Multimodal Representation</span></div>
     <div class="showcase-title">UniCon: Unified Framework for Efficient Contrastive Alignment via Kernels</div>
     <div class="showcase-authors"><strong><span class="cofirst">Hangke Sui</span>*</strong>, <span class="cofirst">Yuqing Wang</span>*, Minh N. Do</div>
     <div class="showcase-meta">
@@ -263,6 +283,7 @@ Publications
 
 <div class="showcase-item">
   <div class="showcase-content">
+    <div class="pub-tags"><span class="pub-tag">Multimodal Representation</span></div>
     <div class="showcase-title">ProCLIP: Product Space Multimodal Contrastive Alignment</div>
     <div class="showcase-authors"><strong><span class="cofirst">Hangke Sui</span>*</strong>, <span class="cofirst">Jiakai Chen</span>*</div>
     <div class="showcase-meta">
