@@ -1112,3 +1112,181 @@ strong { font-weight: 600; color: var(--ink); }
   .edu-item.has-logo .edu-logo { width: 40px; grid-row: 1 / span 4; }
   .edu-item.has-logo .edu-time { grid-column: 2; grid-row: auto; }
 }
+
+/* ===== Quiet "gold & water" theme: rice-paper ivory, mist blue, faint water lines, antique-gold hairlines ===== */
+:root {
+  --ivory: #f7f6f2;
+  --mist: #dde6f2;   /* mist blue, washed in more fully */
+  --gold: #c8b48c;   /* pale champagne gold: luminous, not ochre */
+  --gold-soft: rgba(200, 180, 140, 0.55);
+  --paper: #fdfcf9;
+  --bg-layers:
+    url("/images/bg-water.svg") center / cover no-repeat,
+    /* 金生水: a warm gold light from above settles into mist-blue water below */
+    radial-gradient(70% 45% at 16% 0%, rgba(243, 236, 220, 0.6) 0%, rgba(243, 236, 220, 0) 65%),
+    radial-gradient(110% 70% at 85% 100%, rgba(200, 216, 238, 0.95) 0%, rgba(200, 216, 238, 0) 70%),
+    linear-gradient(180deg, #f8f7f4 0%, #eff2f6 48%, #e1e8f3 100%);
+  --bg-filter: none;
+}
+body { background: var(--ivory); }
+body::after { display: none; }                 /* no grain overlay */
+
+/* Navbar: translucent paper with a single gold hairline */
+.top-nav::before {
+  background: rgba(250, 250, 247, 0.86);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  filter: none;
+  border-bottom: 1px solid var(--gold-soft);
+}
+.top-nav .brand,
+.top-nav .nav-links a,
+.top-nav .nav-toggle { color: var(--ink) !important; }
+.top-nav .nav-links a:hover { color: var(--gold) !important; }
+
+@media (max-width: 1024px) {
+  .mobile-nav-links.is-open { background: rgba(250, 250, 247, 0.96); }
+  .mobile-nav-links a { color: var(--ink) !important; }
+  .mobile-nav-links a:hover { color: var(--gold) !important; }
+}
+
+/* Panels: paper on paper, lifted by a whisper of shadow and a hairline edge */
+.profile-card,
+.main-card {
+  background: var(--paper) !important;
+  border: 1px solid rgba(26, 32, 50, 0.06) !important;
+  box-shadow: 0 1px 2px rgba(30, 45, 80, 0.05), 0 24px 48px -32px rgba(30, 45, 80, 0.28) !important;
+}
+
+/* Section rules: a short gold lead-in on the hairline */
+.main-inner h2::after {
+  background: linear-gradient(90deg, var(--gold) 0 44px, var(--hairline) 44px 100%);
+}
+.profile-avatar {
+  box-shadow:
+    0 0 0 5px var(--paper),
+    0 0 0 6px var(--gold-soft),
+    0 16px 30px -20px rgba(30, 45, 80, 0.45);
+}
+.corner-copyright { color: var(--ink-muted); }
+/* teaser frames: same paper as the card, hairline in the page's ink, so figures sit flush */
+.showcase-media {
+  background: var(--paper);
+  border: 1px solid rgba(26, 32, 50, 0.08);
+  border-bottom: 1px solid rgba(26, 32, 50, 0.08) !important;
+}
+
+/* ===== Section typography, tuned to the gold & water theme =====
+   ink-navy for text, ONE link blue everywhere, mist blue for quiet surfaces,
+   champagne gold only for hairlines and hover. */
+:root {
+  --link: #2f4f86;
+  --link-hover: #1d3463;
+  --mist-ink: #5b6f92;          /* blue-grey for secondary lines */
+  --accent: #2f4f86;
+}
+a { color: var(--link); }
+.main-inner p a,
+.ack-box a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(47, 79, 134, 0.28);
+}
+.main-inner p a:hover,
+.ack-box a:hover { color: var(--link-hover); text-decoration-color: var(--gold); }
+
+/* Body copy: fewer, softer emphases */
+.main-inner p strong { font-weight: 560; color: var(--ink); }
+.topic-tag,
+.topic-mm, .topic-gen, .topic-robot, .topic-health {
+  color: var(--ink) !important;
+  font-weight: 560 !important;
+  background-image: linear-gradient(var(--gold-soft), var(--gold-soft));
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  padding-bottom: 1px;
+}
+
+/* Publications */
+.pub-tag {
+  background: rgba(120, 150, 194, 0.12);
+  color: #3f5a86;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+}
+.showcase-authors { color: var(--ink-soft); }
+.showcase-authors strong { color: var(--ink); }
+.showcase-venue strong { color: var(--link); }
+.showcase-links a {
+  color: var(--link);
+  border-bottom-color: rgba(47, 79, 134, 0.28);
+}
+.showcase-links a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--gold);
+}
+
+/* Experience / Education: three clear tiers */
+.edu-degree { color: var(--ink); }
+.edu-school { color: var(--mist-ink); }
+.edu-time { color: var(--ink-muted); font-size: 0.9rem; letter-spacing: 0.01em; }
+.edu-note { color: var(--ink-muted); }
+.showcase-item + .showcase-item,
+.edu-item + .edu-item { border-top-color: rgba(26, 32, 50, 0.07); }
+
+/* Sidebar */
+.profile-sub {
+  color: var(--mist-ink);
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.profile-sub::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.15rem;
+  width: 28px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: var(--gold);
+}
+.profile-links a { color: var(--ink-soft); font-weight: 500; }
+.profile-links a i { color: var(--mist-ink); }
+.profile-links a:hover { color: var(--ink); }
+.profile-links a:hover span { box-shadow: inset 0 -1px 0 var(--gold); }
+
+/* Acknowledgement: a quiet aside, not a block of italics */
+.ack-box {
+  border-top: 0;
+  border-left: 2px solid var(--gold-soft);
+  padding: 0.15rem 0 0.15rem 1rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
+/* The fixed corner copyright collides with content on narrow screens */
+@media (max-width: 1024px) {
+  .corner-copyright { display: none; }
+}
+
+html { scroll-padding-top: 70px; }
+
+/* Research Interests (content unchanged): a lead line, a body paragraph, and the vision as a quiet aside */
+.ri-lead {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0.2rem 0 1.1rem;
+}
+.ri-body { color: var(--ink-soft); }
+.ri-body strong,
+.ri-vision strong { font-weight: 560; color: var(--ink); }
+.ri-vision {
+  color: var(--ink-soft);
+  border-left: 2px solid var(--gold-soft);
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  margin-top: 1.1rem;
+}
