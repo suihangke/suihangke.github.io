@@ -61,7 +61,7 @@ pagetitle: "Hangke Sui"
   <aside class="profile-card" aria-label="Profile">
 ```
 
-![](/images/profile.jpg){.profile-avatar alt="Hangke Sui"}
+![](/images/avatar-2026.jpg){.profile-avatar alt="Hangke Sui"}
 
 <h2 class="profile-name">Hangke Sui</h2>
 <div class="profile-sub">隋杭珂</div>
