@@ -106,7 +106,7 @@ More broadly, I view representation and generation as complementary facets of in
 <div class="showcase-item has-media">
   <a class="showcase-media" href="https://arxiv.org/abs/2611.31397" tabindex="-1" aria-hidden="true"><video src="/images/papers/core.mp4" poster="/images/papers/core.jpg" autoplay muted loop playsinline preload="metadata" aria-label="CoRe: understanding and generation jointly shape one representation, unlike a representation shaped by understanding and frozen before generation"></video></a>
   <div class="showcase-content">
-    <div class="pub-tags"><span class="pub-tag">Multimodal Representation</span><span class="pub-tag">Generative Modeling</span></div>
+    <div class="pub-tags"><span class="pub-tag">Unified Understanding &amp; Generation</span></div>
     <div class="showcase-title">CoRe: Jointly Learning Contextual Representations for Understanding and Generation</div>
     <div class="showcase-authors"><strong><span class="cofirst">Hangke Sui</span></strong>, Chang Li, Yuyan Li, Mohammad Haris Baig, Daniel Ulbricht</div>
     <div class="showcase-meta">
@@ -225,8 +225,8 @@ More broadly, I view representation and generation as complementary facets of in
   <div class="showcase-content">
     <div class="showcase-title">MASCOT: Manufacturing Agile and Scalable Organoid Tumor Models</div>
     <div class="showcase-authors">
-      Collaborated with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
-      Prof. <a href="https://kinglab.mechse.illinois.edu/">William P. King</a>,
+      PI: Prof. <a href="https://kinglab.mechse.illinois.edu/">William P. King</a>,
+      with Prof. <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a>,
       Prof. <a href="https://bioengineering.illinois.edu/people/rxb">Rohit Bhargava</a>,
       and Prof. <a href="https://mcb.illinois.edu/directory/profile/kumarp">Kannanganattu V. Prasanth</a>
     </div>
@@ -246,7 +246,7 @@ More broadly, I view representation and generation as complementary facets of in
 <div class="edu-list">
   <div class="edu-item has-logo">
     <div class="edu-logo"><img src="/images/logos/uiuc.svg" alt="University of Illinois Block I"></div>
-    <div class="edu-degree">PhD in Electrical and Computer Engineering</div>
+    <div class="edu-degree">PhD Candidate in Electrical and Computer Engineering</div>
     <div class="edu-school">University of Illinois Urbana-Champaign</div>
     <div class="edu-time">2024-present</div>
   </div>
