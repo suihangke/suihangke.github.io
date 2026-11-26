@@ -196,6 +196,20 @@ ul.task-list li input[type="checkbox"] {
         if (e.key === "Escape") close();
       });
     }
+
+    // Teaser videos: browsers pause autoplaying videos when the page is left (e.g. opening Scholar)
+    // and restored from the back-forward cache. Resume them whenever the page is shown again.
+    const resumeTeasers = () => {
+      document.querySelectorAll(".showcase-media video[autoplay]").forEach((v) => {
+        v.muted = true;
+        if (v.paused) v.play().catch(() => {});
+      });
+    };
+    window.addEventListener("pageshow", resumeTeasers);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") resumeTeasers();
+    });
+    window.addEventListener("focus", resumeTeasers);
   })();
 </script>
 
