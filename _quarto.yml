@@ -29,11 +29,35 @@ format:
         <meta property="og:url" content="https://suihangke.github.io/">
         <meta property="og:title" content="Hangke Sui">
         <meta property="og:description" content="Hangke Sui — PhD candidate in ECE at UIUC working on multimodal representation learning, generative modeling, robotics, and AI for healthcare.">
-        <meta property="og:image" content="https://suihangke.github.io/images/share-card-2026.jpg">
+        <meta property="og:image" content="https://suihangke.github.io/images/share-card-gw.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <meta property="og:image:alt" content="Hangke Sui, PhD candidate in ECE at the University of Illinois Urbana-Champaign">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Hangke Sui">
         <meta name="twitter:description" content="Hangke Sui — PhD candidate in ECE at UIUC working on multimodal representation learning, generative modeling, robotics, and AI for healthcare.">
-        <meta name="twitter:image" content="https://suihangke.github.io/images/share-card-2026.jpg">
+        <meta name="twitter:image" content="https://suihangke.github.io/images/share-card-gw.jpg">
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "url": "https://suihangke.github.io/",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Hangke Sui",
+            "alternateName": "隋杭珂",
+            "url": "https://suihangke.github.io/",
+            "image": "https://suihangke.github.io/images/avatar-2026.jpg",
+            "jobTitle": "PhD Candidate",
+            "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign"},
+            "alumniOf": {"@type": "CollegeOrUniversity", "name": "The University of Hong Kong"},
+            "knowsAbout": ["Multimodal representation learning", "Generative modeling", "Robotics", "AI for healthcare"],
+            "sameAs": [
+              "https://scholar.google.com/citations?user=pjd0Ic4AAAAJ",
+              "https://github.com/suihangke",
+              "https://www.linkedin.com/in/hangke-sui",
+              "https://orcid.org/0009-0006-3946-7267"
+            ]
+          }
+        }
+        </script>
